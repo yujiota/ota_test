@@ -36,7 +36,7 @@
     <script src="./js/jquery/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="./js/jquery.csv.js"></script>
     <script type="text/javascript">
-        jquery(window).onload(function () {
+        jquery(window).on('load', function () {
             jquery.get('./csv/test.csv',function(data){
                 var csv = jquery.csv()(data);
                 var itemlist = '';
