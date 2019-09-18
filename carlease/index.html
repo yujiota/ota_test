@@ -36,20 +36,20 @@
     <script src="./js/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="./js/jquery.csv.js"></script>
     <script type="text/javascript">
-    $(window).load(function () {
-        $.get('./csv/test.csv")}',function(data){
-            var csv = $.csv()(data);
-            var itemlist = '';
+        $(window).load(function () {
+            $.get("test.csv")}',function(data){
+                var csv = $.csv()(data);
+                var itemlist = '';
 
-            $(csv).each(function(index){
-                    itemlist += '<li class="list-item">';
-                    itemlist += '<p class="user-balloon mdl-cell mdl-cell--2-offset-desktop mdl-cell--10-col-desktop mdl-cell--1-offset-tablet mdl-cell--7-col-tablet mdl-cell--4-col-phone wow fadeIn", data-wow-offset ="200", data-wow-duration ="0s">' + this[1] + '</p>';
-                    itemlist += '<p class="center-balloon mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone wow fadeIn", data-wow-offset ="200", data-wow-duration ="0s">' + this[0] + '</p>';
-                    itemlist += '</li>';
-      })
-      $("#itemlist").append(itemlist);
+                $(csv).each(function(index){
+                        itemlist += '<li class="list-item">';
+                        itemlist += '<p class="user-balloon mdl-cell mdl-cell--2-offset-desktop mdl-cell--10-col-desktop mdl-cell--1-offset-tablet mdl-cell--7-col-tablet mdl-cell--4-col-phone wow fadeIn", data-wow-offset ="200", data-wow-duration ="0s">' + this[1] + '</p>';
+                        itemlist += '<p class="center-balloon mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone wow fadeIn", data-wow-offset ="200", data-wow-duration ="0s">' + this[0] + '</p>';
+                        itemlist += '</li>';
+          })
+          $("#itemlist").append(itemlist);
+            });
         });
-    });
     </script>
 
 
