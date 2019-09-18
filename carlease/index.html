@@ -36,20 +36,24 @@
     <script src="./js/jquery/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="./js/jquery.csv.js"></script>
     <script type="text/javascript">
-        $(window).on("load", function () {
-            $.get('./csv/test.csv',function(data){
-                var csv = $.csv.toArrays(data)
-                var itemlist = '';
-
-                jquery(csv).each(function(index){
-                        itemlist += '<li class="list-item">';
-                        itemlist += '<p class="date">' + this[0] + '</p>';
-                        itemlist += '<p class="title"><a href="' + this[1] + '">' + this[2] + '</a></p>';
-                        itemlist += '<p class="body">' + this[3] + '</p>';
-                        itemlist += '</li>';
-        	})
-        	jquery("#itemlist").append(itemlist);
+        function readCsv(data) {
+            var target = '#csv-body';
+            var csv = $.csv.toArrays(data);
+            var insert = '';
+            $(csv).each(function() {
+                if (this.length > 0) {
+                    insert += '<tr>';
+                    $(this).each(function() {
+                        insert += '<td>' + this + '</td>';
+                    });
+                    insert += '</tr>';
+                }
             });
+            $(target).append(insert);
+        }
+        var csvfile = 'test.csv';
+        $(function(){
+            $.get(csvfile, readCsv, 'text');
         });
     </script>
 
@@ -151,7 +155,7 @@
 
 
                   <div class="test">
-                    <ul id="itemlist">aaaaaaa</ul>
+                    <tbody id='csv-body'>
                   </div>
 
 
