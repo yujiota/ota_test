@@ -112,13 +112,7 @@
 
 
                   <div class="test">
-                    <table>
-                      <caption>紫陽花の名所</caption>
-                      <thead>
-                        <tr><th>名前</th><th>場所</th><th>種類</th><th>株数</th></tr>
-                      </thead>
-                      <tbody id='csv-body' />
-                    </table>
+                    <ul id="itemlist">aaa</ul>
                   </div>
 
 
@@ -392,27 +386,22 @@
 
 
 
-        <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.8.9/jquery.csv.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.8.9/jquery.csv.min.js"></script>
         <script type="text/javascript">
-            function readCsv(data) {
-                var target = '#csv-body';
-                var csv = $.csv.toArrays(data);
-                var insert = '';
-                $(csv).each(function() {
-                    if (this.length > 0) {
-                        insert += '<tr>';
-                        $(this).each(function() {
-                            insert += '<td>' + this + '</td>';
-                        });
-                        insert += '</tr>';
-                    }
+            $(window).load(function () {
+                $.get('#{test.csv}',function(data){
+                    var csv = $.csv()(data);
+                    var itemlist = '';
+
+                    $(csv).each(function(index){
+                            itemlist += '<li class="list-item">';
+                            itemlist += '<p class="user-balloon mdl-cell mdl-cell--2-offset-desktop mdl-cell--10-col-desktop mdl-cell--1-offset-tablet mdl-cell--7-col-tablet mdl-cell--4-col-phone wow fadeIn", data-wow-offset ="200", data-wow-duration ="0s">' + this[1] + '</p>';
+                            itemlist += '<p class="center-balloon mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone wow fadeIn", data-wow-offset ="200", data-wow-duration ="0s">' + this[0] + '</p>';
+                            itemlist += '</li>';
+            	})
+            	$("#itemlist").append(itemlist);
                 });
-                $(target).append(insert);
-            }
-            var csvfile = 'test.csv';
-            $(function(){
-                $.get(csvfile, readCsv, 'text');
             });
         </script>
 
