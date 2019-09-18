@@ -38,7 +38,7 @@
     <script type="text/javascript">
         $(window).on("load", function () {
             $.get('./csv/test.csv',function(data){
-                var csv = jquery.csv()(data);
+                var csv = $.csv()(data);
                 var itemlist = '';
 
                 jquery(csv).each(function(index){
