@@ -18,12 +18,50 @@
     <meta content="./img/ogp.jpg" property="og:image">
     <meta content="カーリース" property="og:site_name">
     <meta content="" property="og:description">
-
     <!-- FONTS-->
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:200,400,700,900" rel="stylesheet">
     <!-- CSS-->
     <link href="./css/main.css" type="text/css" rel="stylesheet">
     <link href="./css/top.css" type="text/css" rel="stylesheet">
+
+
+
+
+
+
+
+
+
+
+    <script src="./js/jquery/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.csv.js"></script>
+    <script type="text/javascript">
+        $(window).on("load", function () {
+            $.get('./csv/test.csv',function(data){
+                var csv = $.csv()(data);
+                var itemlist = '';
+
+                $(csv).each(function(index){
+                        itemlist += '<li class="list-item">';
+                        itemlist += '<p class="date">' + this[0] + '</p>';
+                        itemlist += '<p class="title"><a href="' + this[1] + '">' + this[2] + '</a></p>';
+                        itemlist += '<p class="body">' + this[3] + '</p>';
+                        itemlist += '</li>';
+        	})
+        	$("#itemlist").append(itemlist);
+            });
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
 
     <!-- Google Tag Manager-->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-MV89QS');</script>
@@ -113,7 +151,7 @@
 
 
                   <div class="test">
-
+                    <ul id="itemlist"></ul>
                   </div>
 
 
