@@ -392,11 +392,11 @@
             $(window).load(function () {
                 $.get('./csv/carlist.csv',function(data){
                     var csv = $.csv.toArrays(data);
-                    var itemlist = '';
+                    var itemlist = csv;
 
 
 
-                    arr = csv.split(/\r\n|\r|\n/);
+                    arr = itemlist.split(/\r\n|\r|\n/);
                   	for (i = 0; i < arr.length; i++) {
                   		alert(arr[i]);
                   	}
