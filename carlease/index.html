@@ -392,8 +392,8 @@
             $(window).load(function () {
                 $.get('./csv/carlist.csv',function(data){
                     var allData = $.csv.toArrays(data);
-                    var array = allData.split(/\r\n|\r|\n/);
-                    console.info(array);
+                    var array = $.allData.split(/\r\n|\r|\n/);
+                    console.log(array);
 
                     var itemlist;
 
