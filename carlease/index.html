@@ -432,21 +432,21 @@
 
                       // 挿入するHTMLを作成
                       for (var i = 0; i < csvList.length; i++) {
-                          var insert = '<li><h3><small>'
-                                  + csvList[i][1]
-                                       '</small></h3></li>',
-                                       '<li><p>'
-                                  + csvList[i][2] + ', '
-                                  + csvList[i][3] + ', '
-                                  + csvList[i][4] + ', '
-                                  + csvList[i][5] + ', '
-                                  + csvList[i][6] + ', '
-                                  + csvList[i][7] + ', '
-                                  + csvList[i][8] + ', '
-                                  + csvList[i][9] + ', '
-                                  + csvList[i][10] + ', '
-                                  + csvList[i][11] +
-                                      '</p></li>';
+                          var insert = '<li>
+                                            <h3><small>'
+                                                + csvList[i][1]
+                                            '</small></h3>'
+                                                + csvList[i][2] + ', '
+                                                + csvList[i][3] + ', '
+                                                + csvList[i][4] + ', '
+                                                + csvList[i][5] + ', '
+                                                + csvList[i][6] + ', '
+                                                + csvList[i][7] + ', '
+                                                + csvList[i][8] + ', '
+                                                + csvList[i][9] + ', '
+                                                + csvList[i][10] + ', '
+                                                + csvList[i][11] +
+                                       '</li>';
                           var target;
                           if (csvList[i][0] === "今週") {
                               target = '#this_week';
