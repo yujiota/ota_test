@@ -417,17 +417,17 @@
                           var insert = '<li>'
                                   + '<h3><small>'
                                   + csvList[i][1] + '</small><span>'
-                                  + csvList[i][2] + '</span><br><p style="magin-bottom: -1em;">'
+                                  + csvList[i][2] + '</span><br><p>'
                                   + csvList[i][3] + '<small>'
                                   + csvList[i][4] + '</small>'
-                                  + csvList[i][5] + '</p></h3><br>'
+                                  + csvList[i][5] + '</p></h3><div class="csv-text">'
                                   + csvList[i][6] + '<br>'
                                   + csvList[i][7] + '<br>'
                                   + csvList[i][8] + '<br>'
                                   + csvList[i][9] + '<br>'
                                   + csvList[i][10] + '<br>'
                                   + csvList[i][11] + '<br><small>'
-                                  + csvList[i][12] + '</small></li>';
+                                  + csvList[i][12] + '</small></div></li>';
                           var target;
                           if (csvList[i][0] === "今週") {
                               target = '#this_week';
