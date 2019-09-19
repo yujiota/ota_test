@@ -392,8 +392,9 @@
             $(window).load(function () {
                 $.get('./csv/carlist.csv',function(data){
                     var allData = $.csv.toArrays(data);
-                    arr = $.allData.split(/\r\n|\r|\n/);
-                    for (i = 0; i < arr.length; i++);
+                    var array = allData.split(/\r\n|\r|\n/);
+                    console.info(array);
+                    for (i = 0; i < array.length; i++);
 
                     var itemlist;
 
@@ -402,7 +403,7 @@
 
 
 
-                    $(arr[i]).each(function(index){
+                    $(array[i]).each(function(index){
                         itemlist += '<li class="list-item">';
                         itemlist += '<p class="">' + this[1] + '</p>';
                         itemlist += '<p class="">' + this[2] + '</p>';
