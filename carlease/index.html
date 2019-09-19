@@ -112,7 +112,7 @@
 
 
                   <div class="test">
-                    <ul id="itemlist">aaa</ul>
+                    <ul id="itemlist"></ul>
                   </div>
 
 
@@ -396,8 +396,18 @@
 
                     $(csv).each(function(index){
                             itemlist += '<li class="list-item">';
-                            itemlist += '<p class="">' + this[1] + '</p>';
                             itemlist += '<p class="">' + this[0] + '</p>';
+                            itemlist += '<p class="">' + this[1] + '</p>';
+                            itemlist += '<p class="">' + this[3] + '</p>';
+                            itemlist += '<p class="">' + this[4] + '</p>';
+                            itemlist += '<p class="">' + this[5] + '</p>';
+                            itemlist += '<p class="">' + this[6] + '</p>';
+                            itemlist += '<p class="">' + this[7] + '</p>';
+                            itemlist += '<p class="">' + this[8] + '</p>';
+                            itemlist += '<p class="">' + this[9] + '</p>';
+                            itemlist += '<p class="">' + this[10] + '</p>';
+                            itemlist += '<p class="">' + this[11] + '</p>';
+                            itemlist += '<p class="">' + this[12] + '</p>';
                             itemlist += '</li>';
             	})
             	$("#itemlist").append(itemlist);
