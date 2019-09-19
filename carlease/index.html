@@ -432,8 +432,10 @@
 
                       // 挿入するHTMLを作成
                       for (var i = 0; i < csvList.length; i++) {
-                          var insert = '<li><p>'
-                                  + csvList[i][1] + '<br>'
+                          var insert = '<li>'
+                                  + '<h3><small>'
+                                      + csvList[i][1]
+                                  + '<small></h3><br>'
                                   + csvList[i][2] + ', '
                                   + csvList[i][3] + ', '
                                   + csvList[i][4] + ', '
@@ -444,7 +446,7 @@
                                   + csvList[i][9] + ', '
                                   + csvList[i][10] + ', '
                                   + csvList[i][11] +
-                                       '</p></li>';
+                                       '</li>';
 
                           var target;
                           if (csvList[i][0] === "今週") {
