@@ -112,7 +112,7 @@
 
 
                   <div class="test">
-                    <ul id="itemlist"></ul>
+                    <ul id="movie"></ul>
                   </div>
 
 
@@ -388,9 +388,13 @@
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.8.9/jquery.csv.min.js"></script>
-        <script type="text/javascript">
+
+
+
+
+        <!-- <script type="text/javascript">
             $(window).load(function () {
-              $.get('./csv/carlist.csv',function(data){
+              $.get('./csv/videolist.csv',function(data){
                 var csv = $.csv.toArrays(data);
                 var itemlist = '';
 
@@ -413,11 +417,40 @@
            	  $("#itemlist").append(itemlist);
                   });
             });
+        </script> -->
+
+
+
+
+
+        <script type="text/javascript">
+          $(function() {
+              $.ajax({
+                  url : './csv/videolist.csv',
+                  success : function(data) {
+
+                      // csvを配列に格納
+                      var csvList = $.csv.toArrays(data);
+
+                      // 挿入するHTMLを作成
+                      for (var i = 0; i < csvList.length; i++) {
+                          var insert = '<li><p>' + csvList[i][1] + ', '
+                                  + csvList[i][2] + '</p></li>';
+                          var target;
+                          if (csvList[i][0] === "映画") {
+                              target = '#movie';
+                          } else if (csvList[i][0] === "アニメ") {
+                              target = '#anime';
+                          } else {
+                              target = '#drama';
+                          }
+                          // targetへ追加
+                          $(target).append(insert);
+                      }
+                  }
+              });
+          });
         </script>
-
-
-
-
 
 
 
