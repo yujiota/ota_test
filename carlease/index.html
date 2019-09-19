@@ -391,15 +391,14 @@
         <script type="text/javascript">
             $(window).load(function () {
                 $.get('./csv/carlist.csv',function(data){
-                    var csv = $.csv.toArrays(data);
-                    var allCsv = csv;
+                    var allCsv = $.csv.toArrays(data);
                     // var itemlist = '';
 
 
                     var arr = allCsv.split(/\r\n|\r|\n/); 
 
                   	for (i = 0; i < arr.length; i++) {
-                  		alert(allCsv[i]);
+                  		alert(arr[i]);
                   	}
 
 
