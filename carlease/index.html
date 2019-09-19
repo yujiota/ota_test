@@ -134,7 +134,7 @@
 
 
 
-                  <div class="pickup-text anime-up" data-scroll><span class="tag">特選中古車</span>
+                  <!-- <div class="pickup-text anime-up" data-scroll><span class="tag">特選中古車</span>
                     <h3><small>新車同然！！</small><span>アルト</span>
                       <p>月額13,750円<small>(税込)</small>×81回</p>
                     </h3>
@@ -149,7 +149,20 @@
                     </ul>
                     <div class="pickup-text-btn"><a class="btn btn-shadow" href="pickup.html">
                         <div class="btn-inner"><span>詳細をみる </span></div></a></div>
-                  </div>
+                  </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+                  
                 </div>
                 <div class="col-lg-6 col-img">
                   <div class="pickup-img"><a class="img-hover" href="pickup.html"><img src="./img/cars/alto.png"></a></div>
@@ -392,8 +405,8 @@
 
 
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.8.9/jquery.csv.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.8.9/jquery.csv.min.js"></script>
 
 
 
@@ -403,46 +416,45 @@
 
 
 
-        <script type="text/javascript">
-          $(function() {
-              $.ajax({
-                  url : './csv/carlist.csv',
-                  success : function(data) {
-
-                      // csvを配列に格納
-                      var csvList = $.csv.toArrays(data);
-
-                      // 挿入するHTMLを作成
-                      for (var i = 0; i < csvList.length; i++) {
-                          var insert = '<li>'
-                                  + '<h3><small>'
-                                  + csvList[i][1] + '</small><span>'
-                                  + csvList[i][2] + '</span><br><p>'
-                                  + csvList[i][3] + '<small>'
-                                  + csvList[i][4] + '</small>'
-                                  + csvList[i][5] + '</p></h3><div class="csv-text">'
-                                  + csvList[i][6] + '<br>'
-                                  + csvList[i][7] + '<br>'
-                                  + csvList[i][8] + '<br>'
-                                  + csvList[i][9] + '<br>'
-                                  + csvList[i][10] + '<br>'
-                                  + csvList[i][11] + '<br><small>'
-                                  + csvList[i][12] + '</small></div></li>';
-                          var target;
-                          if (csvList[i][0] === "今週") {
-                              target = '#this_week';
-                          } else if (csvList[i][0] === "先週") {
-                              target = '#last_week';
-                          } else {
-                              target = '#week_before_last';
-                          }
-                          // targetへ追加
-                          $(target).append(insert);
+    <script type="text/javascript">
+      $(function() {
+          $.ajax({
+              url : './csv/carlist.csv',
+              success : function(data) {
+                  // csvを配列に格納
+                  var csvList = $.csv.toArrays(data);
+                  // 挿入するHTMLを作成
+                  for (var i = 0; i < csvList.length; i++) {
+                      var insert = '<li>'
+                              + '<h3><small>'
+                              + csvList[i][1] + '</small><span>'
+                              + csvList[i][2] + '</span><br><p>'
+                              + csvList[i][3] + '<small>'
+                              + csvList[i][4] + '</small>'
+                              + csvList[i][5] + '</p></h3><div class="csv-text">'
+                              + csvList[i][6] + '<br>'
+                              + csvList[i][7] + '<br>'
+                              + csvList[i][8] + '<br>'
+                              + csvList[i][9] + '<br>'
+                              + csvList[i][10] + '<br>'
+                              + csvList[i][11] + '<br><small>'
+                              + csvList[i][12] + '</small></div></li>';
+                      var target;
+                      if (csvList[i][0] === "今週") {
+                          target = '#this_week';
+                      } else if (csvList[i][0] === "先週") {
+                          target = '#last_week';
+                      } else {
+                          target = '#week_before_last';
                       }
+                      // targetへ追加
+                      $(target).append(insert);
                   }
-              });
+              }
           });
-        </script>
+      });
+    </script>
+
 
 
 
