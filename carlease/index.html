@@ -392,7 +392,6 @@
             $(window).load(function () {
               $.get('./csv/carlist.csv',function(data){
                 var csv = $.csv.toArrays(data);
-                var itemlist='aaa';
 
                 $(csv).each(function(index){
                        itemlist += '<li class="list-item">';
