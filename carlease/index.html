@@ -391,39 +391,36 @@
         <script type="text/javascript">
             $(window).load(function () {
                 $.get('./csv/carlist.csv',function(data){
-                    var ggg = $.csv.toArrays(data);
+                    var test = $.csv.toArrays(data);
                     var itemlist = '';
 
 
 
-                    var hoge = ggg.split(/\r\n|\r|\n/);
-                    for (i = 0; i < hoge.length; i++) {
-                      alert(hoge[i]);
-                    }
 
 
-              //       $(csv).each(function(index){
-              //           itemlist += '<li class="list-item">';
-              //           itemlist += '<p class="">' + this[1] + '</p>';
-              //           itemlist += '<p class="">' + this[2] + '</p>';
-              //           itemlist += '<p class="">' + this[3] + '</p>';
-              //           itemlist += '<p class="">' + this[4] + '</p>';
-              //           itemlist += '<p class="">' + this[5] + '</p>';
-              //           itemlist += '<p class="">' + this[6] + '</p>';
-              //           itemlist += '<p class="">' + this[7] + '</p>';
-              //           itemlist += '<p class="">' + this[8] + '</p>';
-              //           itemlist += '<p class="">' + this[9] + '</p>';
-              //           itemlist += '<p class="">' + this[10] + '</p>';
-              //           itemlist += '<p class="">' + this[11] + '</p>';
-              //           itemlist += '<p class="">' + this[12] + '</p>';
-              //           itemlist += '</li>';
-              //       })
-              //
-              //
-              //
-              //
-              //
-            	// $("#itemlist").append(itemlist);
+
+                    $(test).each(function(index){
+                        itemlist += '<li class="list-item">';
+                        itemlist += '<p class="">' + this[1] + '</p>';
+                        itemlist += '<p class="">' + this[2] + '</p>';
+                        itemlist += '<p class="">' + this[3] + '</p>';
+                        itemlist += '<p class="">' + this[4] + '</p>';
+                        itemlist += '<p class="">' + this[5] + '</p>';
+                        itemlist += '<p class="">' + this[6] + '</p>';
+                        itemlist += '<p class="">' + this[7] + '</p>';
+                        itemlist += '<p class="">' + this[8] + '</p>';
+                        itemlist += '<p class="">' + this[9] + '</p>';
+                        itemlist += '<p class="">' + this[10] + '</p>';
+                        itemlist += '<p class="">' + this[11] + '</p>';
+                        itemlist += '<p class="">' + this[12] + '</p>';
+                        itemlist += '</li>';
+                    })
+
+
+
+
+
+            	$("#itemlist").append(itemlist);
 
 
 
