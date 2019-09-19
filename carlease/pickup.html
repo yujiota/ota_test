@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="format-detection" content="telephone=no">
-    
+
     <title>特選車両 | カーリース</title>
     <meta content="" name="description">
     <meta name="keywords">
-    
+
     <!-- OGP-->
     <meta content="ja_JP" property="og:locale">
     <meta content="website" property="og:type">
@@ -18,19 +18,19 @@
     <meta content="./img/ogp.jpg" property="og:image">
     <meta content="特選車両 | カーリース" property="og:site_name">
     <meta content="" property="og:description">
-    
+
     <!-- FONTS-->
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:200,400,700,900" rel="stylesheet">
     <!-- CSS-->
     <link href="./css/main.css" type="text/css" rel="stylesheet">
     <link href="./css/pickup.css" type="text/css" rel="stylesheet">
-    
+
     <!-- Google Tag Manager-->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-MV89QS');</script>
     <!-- End Google Tag Manager-->
   </head>
   <body id="page-top">
-    
+
      <!-- Google Tag Manager (noscript)-->
     <noscript>
       <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MV89QS" height="0" width="0" style="display:none;visibility:hidden"></iframe>
@@ -40,7 +40,7 @@
     <!-- WRAPPER-->
     <div class="wrapper">
       <!-- NAVI-->
-      <nav class="navbar navbar-expand-xl"><a class="navbar-logo" href="index.html"> 
+      <nav class="navbar navbar-expand-xl"><a class="navbar-logo" href="index.html">
           <div class="flex"><img src="./img/logo.png" alt="カイポケ×オリックス自動車">
           </div></a>
         <div class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -89,19 +89,27 @@
                   <div class="row">
                     <div class="col-lg-6 col-text">
                       <div class="pickup-text"><span class="tag">特選中古車</span>
-                        <h3><small>新車同然！</small><span>アルト</span>
-                          <p>月額13,750円<small>(税込)</small>×81回</p>
-                        </h3>
-                        <ul>
-						  <li>【主要装備】4001</li>
-                          <li>【グレード】L</li>
-                          <li>【初年度登録年】2019年</li>
-                          <li>【色】ホワイト</li>
-                          <li>【走行距離】100km未満</li>
-                          <li>【乗員定員】4人</li>
-                          <li>【主要装備】シートヒーター（運転席）、エネチャージ、アイドリングストップ、キーレスエントリー</li>
-                           <li class="small">※画像はイメージとなります </li>
-                        </ul>
+
+
+
+
+
+
+
+
+
+                        <ul id="this_week"></ul>
+
+
+
+
+
+
+
+
+
+
+
                         <p class="small">※商品改定等で保険料が変動する場合がございますのでご注意ください。</p>
                       </div>
                     </div>
@@ -355,11 +363,76 @@
       </footer>
     </div>
     <!-- JS-->
-    <script src="./js/jquery/jquery-3.3.1.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.8.9/jquery.csv.min.js"></script>
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+      $(function() {
+          $.ajax({
+              url : './csv/carlist.csv',
+              success : function(data) {
+                  // csvを配列に格納
+                  var csvList = $.csv.toArrays(data);
+                  // 挿入するHTMLを作成
+                  for (var i = 0; i < csvList.length; i++) {
+                      var insert = '<li>'
+                              + '<h3><small>'
+                              + csvList[i][1] + '</small><span>'
+                              + csvList[i][2] + '</span><br><p>'
+                              + csvList[i][3] + '<small>'
+                              + csvList[i][4] + '</small>'
+                              + csvList[i][5] + '</p></h3><div class="csv-text">'
+                              + csvList[i][6] + '<br>'
+                              + csvList[i][7] + '<br>'
+                              + csvList[i][8] + '<br>'
+                              + csvList[i][9] + '<br>'
+                              + csvList[i][10] + '<br>'
+                              + csvList[i][11] + '<br><small>'
+                              + csvList[i][12] + '</small></div></li>';
+                      var target;
+                      if (csvList[i][0] === "今週") {
+                          target = '#this_week';
+                      } else if (csvList[i][0] === "先週") {
+                          target = '#last_week';
+                      } else {
+                          target = '#week_before_last';
+                      }
+                      // targetへ追加
+                      $(target).append(insert);
+                  }
+              }
+          });
+      });
+    </script>
+
+
+
+
+
+
+
     <script src="./js/bootstrap/bootstrap.min.js"></script>
     <script src="./js/scroll-out/scroll-out.min.js"></script>
     <script src="./js/main.min.js"></script>
     <script src="./js/ranking.min.js"></script>
-   
+
   </body>
 </html>
