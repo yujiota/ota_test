@@ -47,7 +47,7 @@ $(function() {
             // 挿入するHTMLを作成
             for (var i = 0; i < csvList.length; i++) {
                 var insert = '<img src="'
-                        + csvList[i][14] + '">';
+                        + csvList[i][15] + '">';
                 var target;
                 if (csvList[i][0] === "今週") {
                     target = '#this_week_img';
