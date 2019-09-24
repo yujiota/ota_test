@@ -1,6 +1,6 @@
 $(function() {
     $.ajax({
-        url : './csv/carlist.csv',
+        url : '././csv/carlist.csv',
         success : function(data) {
             // csvを配列に格納
             var csvList = $.csv.toArrays(data);
@@ -40,7 +40,7 @@ $(function() {
 
 $(function() {
     $.ajax({
-        url : './csv/carlist.csv',
+        url : '././csv/carlist.csv',
         success : function(data) {
             // csvを配列に格納
             var csvList = $.csv.toArrays(data);
