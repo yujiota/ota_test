@@ -1,14 +1,6 @@
 $(function() {
     $.ajax({
-
-
-
-
-        url : 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQSFwtfpNrnS10OrGcV9pYItYIL4e4278CRxJz40TLcPe44yXSex0MB83DYbOgtJmJsFvmyxOT2Eo7Q/pub?gid=0&single=true&output=csv',
-
-
-
-        // url : '././csv/carlist.csv',
+        url : '././csv/carlist.csv',
         success : function(data) {
             // csvを配列に格納
             var csvList = $.csv.toArrays(data);
@@ -49,14 +41,7 @@ $(function() {
 
 $(function() {
     $.ajax({
-
-
-      url : 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQSFwtfpNrnS10OrGcV9pYItYIL4e4278CRxJz40TLcPe44yXSex0MB83DYbOgtJmJsFvmyxOT2Eo7Q/pub?gid=0&single=true&output=csv',
-
-
-
-      // url : '././csv/carlist.csv',
-
+        url : '././csv/carlist.csv',
         success : function(data) {
             // csvを配列に格納
             var csvList = $.csv.toArrays(data);
