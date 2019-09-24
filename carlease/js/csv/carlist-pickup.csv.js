@@ -35,10 +35,6 @@ $(function() {
         }
     });
 });
-
-
-
-
 $(function() {
     $.ajax({
         url : '././csv/carlist.csv',
