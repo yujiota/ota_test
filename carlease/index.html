@@ -111,11 +111,15 @@
 
 
 
-                  <div class="pickup-text anime-up" data-scroll><span class="tag">特選中古車</span>
+                  <div class="pickup-text anime-up" data-scroll>
+
+
 
 
 
                     <ul id="this_week"></ul>
+
+
 
 
 
@@ -162,7 +166,7 @@
 
 
 
-                  
+
                 </div>
                 <div class="col-lg-6 col-img">
                   <div class="pickup-img"><a class="img-hover" href="pickup.html"><img src="./img/cars/alto.png"></a></div>
@@ -425,20 +429,20 @@
                   var csvList = $.csv.toArrays(data);
                   // 挿入するHTMLを作成
                   for (var i = 0; i < csvList.length; i++) {
-                      var insert = '<li>'
-                              + '<h3><small>'
-                              + csvList[i][1] + '</small><span>'
-                              + csvList[i][2] + '</span><br><p>'
-                              + csvList[i][3] + '<small>'
-                              + csvList[i][4] + '</small>'
-                              + csvList[i][5] + '</p></h3><div class="csv-text">'
-                              + csvList[i][6] + '<br>'
+                      var insert = '<span class="tag">' +
+                              + csvList[i][1] + '</span><li><h3><small>'
+                              + csvList[i][2] + '</small><span>'
+                              + csvList[i][3] + '</span><br><p>'
+                              + csvList[i][4] + '<small>'
+                              + csvList[i][5] + '</small>'
+                              + csvList[i][6] + '</p></h3><div class="csv-text">'
                               + csvList[i][7] + '<br>'
                               + csvList[i][8] + '<br>'
                               + csvList[i][9] + '<br>'
                               + csvList[i][10] + '<br>'
-                              + csvList[i][11] + '<br><small>'
-                              + csvList[i][12] + '</small></div></li>';
+                              + csvList[i][11] + '<br>'
+                              + csvList[i][12] + '<br><small>'
+                              + csvList[i][13] + '</small></div></li>';
                       var target;
                       if (csvList[i][0] === "今週") {
                           target = '#this_week';
