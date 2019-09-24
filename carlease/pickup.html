@@ -433,30 +433,7 @@
 
 
 
-      $(function() {
-          $.ajax({
-              url : './csv/carlist.csv',
-              success : function(data) {
-                  // csvを配列に格納
-                  var csvList = $.csv.toArrays(data);
-                  // 挿入するHTMLを作成
-                  for (var i = 0; i < csvList.length; i++) {
-                      var insert = '<img src="'
-                              + csvList[i][14] + '">';
-                      var target;
-                      if (csvList[i][0] === "今週") {
-                          target = '#this_week_img';
-                      } else if (csvList[i][0] === "先週") {
-                          target = '#last_week_img';
-                      } else {
-                          target = '#week_before_last_img';
-                      }
-                      // targetへ追加
-                      $(target).append(insert);
-                  }
-              }
-          });
-      });
+
 
 
 
