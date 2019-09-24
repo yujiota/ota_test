@@ -1,7 +1,6 @@
 $(function() {
     $.ajax({
-        url : 'https://docs.google.com/spreadsheets/d/e/2PACX-1vROyDnD3WVPdW4ktqG_6v9QJ0M11SQZuWaLY_mqQSZoLJHHXCvxfO44msIQfOhFmPu6rzkGVS8whPUi/pub?output=csv',
-        // url : '././csv/carlist.csv',
+        url : '././csv/carlist.csv',
         success : function(data) {
             // csvを配列に格納
             var csvList = $.csv.toArrays(data);
@@ -37,8 +36,7 @@ $(function() {
 });
 $(function() {
     $.ajax({
-        url : 'https://docs.google.com/spreadsheets/d/e/2PACX-1vROyDnD3WVPdW4ktqG_6v9QJ0M11SQZuWaLY_mqQSZoLJHHXCvxfO44msIQfOhFmPu6rzkGVS8whPUi/pub?output=csv',
-        // url : '././csv/carlist.csv',
+        url : '././csv/carlist.csv',
         success : function(data) {
             // csvを配列に格納
             var csvList = $.csv.toArrays(data);
