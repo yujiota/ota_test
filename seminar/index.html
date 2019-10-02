@@ -120,6 +120,68 @@
     </div>
   </div>
 </div>
+
+
+
+<div id="schedule" class="container2">
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <form class="form-horizontal">
+        <div class="form-group pt-4">
+          <div class="">
+
+            <!-- filter btn testsing -->
+            <h4>全国のICTセミナースケジュール</h4>
+            <p>キーワード検索、または開催地やサービスの絞り込み表示が可能です。</p>
+            <input class="form-control mb-2" id="myInput" type="text" placeholder="キーワードを入力して検索する　例：入門セミナー">
+            <div>
+              <div class="mb-2"> <span class="ml-3 vam">開催地：</span>
+                <button id="hokkaidofilterbtn" type="button" class="btn btn-filter">北海道</button>
+                <button id="tokyofilterbtn" type="button" class="btn btn-filter">東京</button>
+                <button id="osakafilterbtn" type="button" class="btn btn-filter">大阪</button>
+                <button id="nofilterbtn" type="button" class="btn btn-filter">全表示</button>
+              </div>
+              <div> <span class="ml-3 vam">サービス：</span>
+                <button id="dtbfilterbtn" type="button" class="btn btn-filter-dtb">通所介護</button>
+                <button id="hcrfilterbtn" type="button" class="btn btn-filter-hcr">訪問介護</button>
+                <button id="hncfilterbtn" type="button" class="btn btn-filter-hnc">訪問看護</button>
+                <button id="hhsfilterbtn" type="button" class="btn btn-filter-hhs">居宅介護</button>
+              </div>
+            </div>
+
+            <!-- filter btn testsing -->
+            <!--
+            <table id="userTable" class="mt-2">
+                  <thead class="text-center thead-gray">
+                <tr>
+                      <th data-field="開催日" data-sortable="true" scope="col-2">開催日</th>
+                      <th data-field="開催場所" data-sortable="true" scope="col-1">開催場所</th>
+                      <th data-field="時間" data-sortable="true" scope="col-1">時間</th>
+                      <th data-field="テーマ" data-sortable="true" scope="col-5">テーマ</th>
+                      <th data-field="対象" data-sortable="true" scope="col-1">対象</th>
+                      <th data-field="お申込" data-sortable="true" scope="col-1">お申込</th>
+                    </tr>
+              </thead>
+                  <tbody id="myTable" class="thead-lightgray text-center">
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr>
+                      <td><button type="button" class="btn btn-primary btn-sm">Small button</button></td>
+                    </tr>
+              </tbody>
+                </table>-->
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
 <div class="container2">
   <table id="myTable" class="table table-bordered-seminer tablesorter">
     <thead class="text-center thead-gray">
@@ -278,22 +340,7 @@
     <tbody id="seminar" class="thead-lightgray text-center">
 
 
-      <tr>
-        <td>9月18日</td>
-        <td>東京</td>
-        <td>11:00～</td>
-        <td class="hnc-color"><i class="fas fa-circle circle_hnc"></i>訪問看護</td>
-        <td>訪看タブレット入門セミナー</td>
-        <td><a href="https://bm-sms.secure.force.com/kaipokeseminar/?id=7016F000002SKQw" target="_blank" class="btn btn-application" role="button">お申込</a></td>
-      </tr>
-      <tr>
-        <td>9月18日</td>
-        <td>東京</td>
-        <td>11:00～</td>
-        <td class="hnc-color"><i class="fas fa-circle circle_hnc"></i>訪問看護</td>
-        <td>訪看タブレット入門セミナー</td>
-        <td><a href="https://bm-sms.secure.force.com/kaipokeseminar/?id=7016F000002SKQw" target="_blank" class="btn btn-application" role="button">お申込</a></td>
-      </tr>
+      <!-- ここに流し込まれる -->
 
 
     </tbody>
@@ -343,13 +390,13 @@
                 var csvList = $.csv.toArrays(data);
                 // 挿入するHTMLを作成
                 for (var i = 0; i < csvList.length; i++) {
-                    var insert = '<span class="tag">'
-                            + csvList[i][0] + '</span><li><h3><small>'
-                            + csvList[i][1] + ''
-                            + csvList[i][2] + '</small><span>'
-                            + csvList[i][3] + '</span><br><p>'
-                            + csvList[i][4] + '<small>'
-                            + csvList[i][5] + '</small>';
+                    var insert = '<tr><td>'
+                            + csvList[i][0] + '</td><td>'
+                            + csvList[i][1] + '</td><td>'
+                            + csvList[i][2] + '</td><td class="hnc-color"><i class="fas fa-circle circle_hnc"></i>'
+                            + csvList[i][3] + '</td><td>'
+                            + csvList[i][4] + '</td><td><a href="'
+                            + csvList[i][5] + '" target="_blank" class="btn btn-application" role="button">お申込</a></td></tr>';
 
                     var target = '#seminar';
 
