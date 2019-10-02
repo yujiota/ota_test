@@ -12,13 +12,13 @@
 <link href="css/style.css" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.14.2/dist/bootstrap-table.min.css">
 
-<!-- Google Tag Manager --> 
+<!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-MV89QS');</script> 
-<!-- End Google Tag Manager --> 
+    })(window,document,'script','dataLayer','GTM-MV89QS');</script>
+<!-- End Google Tag Manager -->
 
 <script>
         var cookies = document.cookie.split("; ");
@@ -33,8 +33,8 @@
         dataLayer = [{
             'corporationId': memberInfo[0]
         }];
-    </script> 
-<script type="text/javascript">(function(){var t,e,r,n,a;for(t=function(){var t;return t=t||[],function(){var e,r,n,a;for(r=["init","start","stop","user","track","action","event","goal","chat","buy","page","view","admin","group","alias","ready","link","form","click","submit","cmd","emit","on","send","css","js","style","option","get","set","collection"],e=function(e){return function(){return t.push([e].concat(Array.prototype.slice.call(arguments,0)))}},n=0,a=[];n<r.length;)t[r[n]]=e(r[n]),a.push(n++);return a}(),t.init=function(e,r){var n,a;return t.api_key=e,t.options=r||{},a=document.createElement("script"),a.type="text/javascript",a.async=!0,a.charset="utf-8",a.src=t.options.tracker_url||"https://static.karte.io/libs/tracker.js",n=document.getElementsByTagName("script")[0],n.parentNode.insertBefore(a,n)},t},n=window.karte_tracker_names||["tracker"],e=0,r=n.length;r>e;e++)a=n[e],window[a]=t();tracker.init("5fb0d74e21e5e24abbdca8a72454e833")}).call(this);</script> 
+    </script>
+<script type="text/javascript">(function(){var t,e,r,n,a;for(t=function(){var t;return t=t||[],function(){var e,r,n,a;for(r=["init","start","stop","user","track","action","event","goal","chat","buy","page","view","admin","group","alias","ready","link","form","click","submit","cmd","emit","on","send","css","js","style","option","get","set","collection"],e=function(e){return function(){return t.push([e].concat(Array.prototype.slice.call(arguments,0)))}},n=0,a=[];n<r.length;)t[r[n]]=e(r[n]),a.push(n++);return a}(),t.init=function(e,r){var n,a;return t.api_key=e,t.options=r||{},a=document.createElement("script"),a.type="text/javascript",a.async=!0,a.charset="utf-8",a.src=t.options.tracker_url||"https://static.karte.io/libs/tracker.js",n=document.getElementsByTagName("script")[0],n.parentNode.insertBefore(a,n)},t},n=window.karte_tracker_names||["tracker"],e=0,r=n.length;r>e;e++)a=n[e],window[a]=t();tracker.init("5fb0d74e21e5e24abbdca8a72454e833")}).call(this);</script>
 <script>
     (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-MV89QS');
     </script>
@@ -125,8 +125,8 @@
     <div class="panel-body">
       <form class="form-horizontal">
         <div class="form-group pt-4">
-          <div class=""> 
-            
+          <div class="">
+
             <!-- filter btn testsing -->
             <h4>全国のICTセミナースケジュール</h4>
             <p>キーワード検索、または開催地やサービスの絞り込み表示が可能です。</p>
@@ -145,8 +145,8 @@
                 <button id="hhsfilterbtn" type="button" class="btn btn-filter-hhs">居宅介護</button>
               </div>
             </div>
-            
-            <!-- filter btn testsing --> 
+
+            <!-- filter btn testsing -->
             <!--
             <table id="userTable" class="mt-2">
                   <thead class="text-center thead-gray">
@@ -169,7 +169,7 @@
                       <td><button type="button" class="btn btn-primary btn-sm">Small button</button></td>
                     </tr>
               </tbody>
-                </table>--> 
+                </table>-->
           </div>
         </div>
       </form>
@@ -188,7 +188,7 @@
         <th scope="col-2">お申込</th>
       </tr>
     </thead>
-    <tbody class="thead-lightgray text-center">
+    <tbody id="seminar" class="thead-lightgray text-center">
       <tr>
         <td>9月18日</td>
         <td>東京</td>
@@ -379,12 +379,68 @@
   </div>
 </div>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-<script src="js/jquery-3.2.1.min.js"></script> 
-<!-- Include all compiled plugins (below), or include individual files as needed --> 
-<script src="js/popper.min.js"></script> 
-<script src="js/bootstrap-4.0.0.js"></script> 
-<script src="js/bootstrap-table.min.js"></script> 
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery/jquery-1.10.2.min.js"></script>
+
+
+<script src="js/jquery/jquery.csv.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+<script>
+    $(function() {
+        $.ajax({
+            url : './csv/seminar.csv',
+            success : function(data) {
+                // csvを配列に格納
+                var csvList = $.csv.toArrays(data);
+                // 挿入するHTMLを作成
+                for (var i = 0; i < csvList.length; i++) {
+                    var insert = '<span class="tag">'
+                            + csvList[i][1] + '</span><li><h3><small>'
+                            + csvList[i][2] + '</small><span>'
+                            + csvList[i][3] + '</span><br><p>'
+                            + csvList[i][4] + '<small>'
+                            + csvList[i][5] + '</small>'
+                            + csvList[i][6] + '</p></h3><div class="csv-text">'
+                            + csvList[i][7] + '<br>'
+                            + csvList[i][8] + '<br>'
+                            + csvList[i][9] + '<br>'
+                            + csvList[i][10] + '<br>'
+                            + csvList[i][11] + '<br>'
+                            + csvList[i][12] + '<br><small>'
+                            + csvList[i][13] + '</small></div></li>';
+                        target = '#seminar';
+                    // targetへ追加
+                    $(target).append(insert);
+                }
+            }
+        });
+    });
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap-4.0.0.js"></script>
+<script src="js/bootstrap-table.min.js"></script>
 <script src="js/index.js"></script>
 <footer class="bg-dark text-white p-2">
   <p class="text-center m-0">Copyright (C) SMS Co., Ltd. All Rights Reserved.</p>
