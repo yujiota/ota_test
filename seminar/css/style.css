@@ -23,7 +23,7 @@ a.btn-squre {
   background: #ff9933;
   color: #FFF;
   border-bottom: solid 2px #e70;
-  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);	
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -33,8 +33,8 @@ a.btn-squre {
   user-select: none;
   font-size: 1rem;
   line-height: 1.5;
-  border-radius: 0.25rem;	
-	
+  border-radius: 0.25rem;
+
 }
  a.btn-squre:hover {
   color: #ffffff;
@@ -334,16 +334,16 @@ table tbody tr td a:hover {
 	margin-right: 6px;
 	font-size: 80%;
 }
-.circle_hnc {
+.houkan {
 	color: #ea5e88;
 }
-.circle_hcr {
+.houkai {
 	color: #00b19a;
 }
-.circle_dtb {
+.tsuusho {
 	color: #00a1d9;
 }
-.circle_hhs {
+.kyotaku {
 	color: #8e53a9;
 }
 .display-5 {
