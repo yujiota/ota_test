@@ -1,7 +1,7 @@
 <script>
     $(function() {
         $.ajax({
-            url : './csv/seminar.csv',
+            url : '././csv/seminar.csv',
             success : function(data) {
                 // csvを配列に格納
                 var csvList = $.csv.toArrays(data);
