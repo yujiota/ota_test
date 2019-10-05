@@ -1,0 +1,36 @@
+.vmenuitem{
+	background-color:#ffffff; 
+	cursor:pointer; 
+	width:240px;
+	
+}
+
+.vmenu_on, .vmenu_off{
+	margin: 2px 0px;
+	font-size: 14px;
+}
+
+.vmenu_on .vmenuitem{
+	border: 0px solid #ffffff;
+	border-left: 0px solid #ffffff;
+	font-size: 14px;
+	line-height: 27px;	
+}
+
+.vmenu_off .vmenuitem{
+	border: 0px solid #ffffff;
+	border-left: 0px solid #ffffff;
+	font-size: 14px;
+	line-height: 27px;
+}
+
+.vmenu_on ul{
+	display: auto;
+	margin: 2px auto;
+	padding-left: 12px;
+	font-style: italic;
+}
+
+.vmenu_off ul{
+	display:none;
+}

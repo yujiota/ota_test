@@ -1,0 +1,346 @@
+/*============================================*/
+/* Global
+/*--------------------------------------------*/
+html { 
+
+	overflow-y: scroll; /* Firefox */
+	font-size :62.5%; /* font-size : 10px; = font-size: 1rem; */
+	*/
+}
+
+body {
+	background-color:#FFF;
+	color:#666;
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	line-height: 1.4em;
+}
+
+div.clear
+{
+	clear : both;
+}
+
+a:visited { color:#000000;}
+a:link { color:#000;}
+a:hover {color:#C60;}
+a:active {
+	color: #000;
+}
+
+a img {border:none;}
+
+
+/*============================================*/
+/* Wrapper
+/*--------------------------------------------*/
+
+
+#wrap {
+	width: 1020px;
+	background-color: #fff;
+	padding-left: 40px;
+	font-style: normal;
+}
+
+#wrapper {
+	width: 750px;
+	overflow: hidden;
+}
+
+#wrapper1 {
+	width: 1000px;
+	margin: 0 auto;
+
+}
+
+
+/*============================================*/
+/* Header
+/*--------------------------------------------*/
+
+#header
+{
+	width: 1000 px;
+	height: 150 px;
+	font-size: 24px;
+	padding-top: 30px;
+	padding-left: 0px;
+	font-family: "Times New Roman", Times, serif;
+	color: #000000;
+	letter-spacing: 4px;
+}
+
+
+
+/*============================================*/
+/* sidemenu
+/*--------------------------------------------*/
+
+#sidemenu
+{
+	width: 240px;
+	height: 100%;
+	background-color: #FFF;
+	float: left;
+	padding-left: 10px;
+	padding-top: 33px;
+	letter-spacing: normal;
+}
+
+
+
+/*============================================*/
+/* Footer
+/*--------------------------------------------*/
+
+#footer
+{
+	display : block;
+	position : relative;
+	float : none;
+	margin-top: 10px;
+	text-align: left;
+}
+
+
+
+
+#footer img {
+	margin-top: 0px;
+	margin-right: 0px;
+}
+
+
+/*============================================*/
+/* Main
+/*--------------------------------------------*/
+.main {
+	display : block;
+	position : relative;
+	float : none;
+	width : 700px;
+	height : 710px;
+	border: solid 0px #fff;
+	color: #999;
+	padding: 50px 14px 14px 4px;
+}
+
+
+.main2 {
+	
+	display : block;
+	position : relative;
+	float : none;
+	
+	width : 998px;
+	height : 598px;
+
+	border: solid 1px #999;
+	color:#999;
+}
+
+
+#contents {
+	clear: left;
+	width: 760px;
+	height: 500px;
+	padding: 30px 100px 15px 100px;
+	border: solid 1px #999;
+}
+
+
+
+/*============================================*/
+/* memory
+/*--------------------------------------------*/
+
+.memory div#top
+{
+	margin-bottom : 0px;
+}
+
+
+.memory div.top-container
+{
+	display : block;
+	position : relative;
+	float : none;
+	width : 700px;
+	height : 100%;
+}
+
+.memory div#preview-outer-container
+{
+	display : block;
+	position : relative;
+	float : none;
+	height : 690px;
+	width : 700px;
+	margin-top: 30px;
+}
+
+.memory div#preview-inner-container
+{
+	display : block;
+	position : relative;
+	float : none;
+	margin : 0px auto;
+	width : 500px; /*temp*/
+	height : 700px;
+	text-align : center;
+}
+
+
+.memory img#preview
+{
+}
+
+
+.memory #over-base
+{
+	display : block;
+	position : absolute;
+	top : 0;
+	left : 0;
+	width : 100%;
+	height : 700px;
+	z-index : 100;
+	margin-top: 0px;
+}
+
+.memory #over-left
+{
+	float : left;
+	
+	width : 50%;
+	height : 100%;
+
+	background-image : url("../images/blank.gif");
+	background-repeat : repeat;
+	
+	cursor : pointer;
+}
+
+.memory #over-right
+{
+	float : right;
+
+	width : 50%;
+	height : 100%;
+
+	background-image : url("../images/blank.gif");
+	background-repeat : repeat;
+	
+	cursor : pointer;
+}
+
+
+.memory div.bottom-container
+{
+	position : absolute;
+	top : 500px;
+	width : 700px;
+	text-align : center;
+}
+
+.memory div.titleprev-container
+{
+	height : 30px;
+	position : relative;
+	text-align : center;
+	width: 700px;
+}
+.memory div#titleprev
+{
+	height : 30px;
+	
+	display : inline-block;
+}
+
+
+.memory div.thumb-container
+{
+}
+
+.memory div.thumb
+{
+	display : inline-block;
+	width : 20px;
+	height : 0px;
+	padding-top : 0px;
+	padding-bottom : 0px;
+}
+
+.memory div.thumb img
+{
+	cursor:pointer;
+}
+
+.memory #allow-left
+{
+	display : block;
+	position : absolute;
+	left : 101px;
+	width : 50px;
+	height : 50px;
+	margin-top : 10px;
+	margin-bottom : 10px;
+	cursor: pointer;
+	background-image : url("../images/allow_left.jpg");
+	background-repeat : no-repeat;
+	background-position : top right;
+	top: -521px;
+}
+
+
+.memory #allow-left:hover
+{
+	background-position : bottom right;
+}
+
+
+.memory #allow-right
+{
+	display : block;
+	position : absolute;
+	width : 50px;
+	height : 50px;
+	right : 100px;
+	margin-top : 10px;
+	margin-bottom : 10px;
+	cursor: pointer;
+	background-image: url("../images/allow_right.jpg");
+	background-repeat : no-repeat;
+	background-position : top left;
+	overflow : hidden;
+	top: -521px;
+}
+
+.memory #allow-right:hover
+{
+	background-position : bottom left;
+}
+
+
+
+
+/*============================================*/
+/* hr
+/*--------------------------------------------*/
+.hr {
+	border-top: 1px solid #bbb;
+}
+
+/*============================================*/
+/* photo,exhibition以外のコンテンツエリア
+/*--------------------------------------------*/
+
+#main_content22{
+	width: 700 px;
+	height: 100 %;
+	padding-top: 50px;
+    padding-right: 14px;
+	padding-bottom: 14px;
+	padding-left: 14px;	
+	
+}

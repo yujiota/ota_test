@@ -1,0 +1,174 @@
+/*
+copyright (c) 2011, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 2.9.0
+*/
+/**
+ * YUI Fonts
+ * @module fonts
+ * @namespace yui-
+ * @requires 
+ */
+
+/**
+ * Percents could work for IE, but for backCompat purposes, we are using keywords.
+ * x-small is for IE6/7 quirks mode.
+ */
+body {
+	font:13px/1.231 "ÉqÉâÉMÉmäpÉS Pro W3", "Hiragino Kaku Gothic Pro", "ÉÅÉCÉäÉI", Meiryo, Osaka, "ÇlÇr ÇoÉSÉVÉbÉN", "MS PGothic",arial,helvetica,clean,sans-serif;
+	/* for IE6/7 */ 
+	*font-size:small; 
+	/* for IE Quirks Mode */
+	*font:x-small; 
+}
+
+/**
+ * Nudge down to get to 13px equivalent for these form elements
+ */ 
+select,
+input,
+textarea,
+button {
+	font:99% arial,helvetica,clean,sans-serif;
+}
+
+/**
+ * To help tables remember to inherit
+ */
+table {
+	font-size:inherit;
+	font:100%;
+}
+
+/* Font-size List
+10px { font-size:77%; }
+11px { font-size:85%; }
+12px { font-size:93%; }
+13px { font-size:100%; }
+14px { font-size:108%; }
+15px { font-size:116%; }
+16px { font-size:123.1%; }
+17px { font-size:131%; }
+18px { font-size:138.5%; }
+19px { font-size:146.5%; }
+20px { font-size:153.9%; }
+21px { font-size:161.6%; }
+22px { font-size:167%; }
+23px { font-size:174%; }
+24px { font-size:182%; }
+25px { font-size:189%; }
+26px { font-size:197%; }
+*/
+
+/**
+ * Bump up IE to get to 13px equivalent for these fixed-width elements
+ */
+pre,
+code,
+kbd,
+samp,
+tt {
+	font-family:monospace;
+	*font-size:108%;
+	line-height:100%;
+}
+
+/*My setting*/
+/* ï∂éöÇÃê›íË---------------------------------------------------- */
+.w1b {
+	font-size: 123.1%;
+	line-height: 100%;
+	font-weight: bold;
+	font-variant: normal;
+}
+.w1 {
+	font-size: 123.1%;
+	line-height: 100%;
+	font-weight: normal;
+	font-variant: normal;
+}
+.w2b {
+	font-size: 116%;
+	line-height: 110%;
+	font-weight: bold;
+	font-variant: normal;
+}
+.w2 {
+	font-size: 116%;
+	line-height: 110%;
+	font-weight: normal;
+	font-variant: normal;
+}
+.w3b {
+	font-size: 	93%;
+	line-height: 130%;
+	font-weight: bold;
+	font-variant: normal;
+}
+.w3 {
+	font-size: 	93%;
+	line-height: 130%;
+	font-weight: normal;
+	font-variant: normal;
+}
+
+.w3blue {
+	font-size: 	93%;
+	line-height: 130%;
+	font-weight: normal;
+	font-variant: normal;
+	color:#06F;
+}
+
+
+.w4 {
+	font-size: 	77%;
+	line-height: 110%;
+	font-weight: normal;
+	font-variant: normal;
+}
+.ew1b {
+	font-size: 138.5%;
+	line-height: 100%;
+	font-weight: bold;
+	font-variant: normal;
+}
+.ew1 {
+	font-size: 138.5%;
+	line-height: 100%;
+	font-weight: normal;
+	font-variant: normal;
+}
+.ew2b {
+	font-size: 123.1%;
+	line-height: 110%;
+	font-weight: bold;
+	font-variant: normal;
+}
+.ew2 {
+	font-size: 123.1%;
+	line-height: 110%;
+	font-weight: normal;
+	font-variant: normal;
+}
+.ew3b {
+	font-size: 100%;
+	line-height: 110%;
+	font-weight: bold;
+	font-variant: normal;
+}
+.ew3 {
+	font-size: 100%;
+	line-height: 110%;
+	font-weight: normal;
+	font-variant: normal;
+}
+.ew4 {
+	font-size: 	93%;
+	line-height: 110%;
+	font-weight: normal;
+	font-variant: normal;
+}
+
+
