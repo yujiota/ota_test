@@ -1,8 +1,8 @@
 .vmenuitem{
-	background-color:#ffffff; 
-	cursor:pointer; 
+	background-color:#ffffff;
+	cursor:pointer;
 	width:240px;
-	
+
 }
 
 .vmenu_on, .vmenu_off{
@@ -14,7 +14,7 @@
 	border: 0px solid #ffffff;
 	border-left: 0px solid #ffffff;
 	font-size: 14px;
-	line-height: 27px;	
+	line-height: 27px;
 }
 
 .vmenu_off .vmenuitem{
@@ -34,3 +34,24 @@
 .vmenu_off ul{
 	display:none;
 }
+
+.vmenu_on ol{
+	display: auto;
+	margin: 2px auto;
+	padding-left: 12px;
+	font-style: italic;
+}
+
+.vmenu_off ol{
+	display:none;
+	hight:22px;
+}
+
+a:visited { color:#000000;}
+a:link { color:#000;}
+a:hover {color:#C60;}
+a:active {
+	color: #000;
+}
+
+a img {border:none;}
