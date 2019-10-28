@@ -284,7 +284,7 @@ footer {
 }
 .wrapper--border-bottom {
 	height: 64px;
-	border-bottom: 1px solid #999999
+	border-bottom: 1px solid #e0e0e0
 }
 .wrapper--orange {
 	background-color: #ff9800
@@ -343,6 +343,9 @@ footer {
 .inner--space {
 	padding: 2vw 0
 }
+}
+.inner--width-650 {
+	width: 650px
 }
 .inner--width-800 {
 	width: 800px
@@ -713,13 +716,19 @@ footer {
 }
 }
 .description__main {
-	font-size: 25px
+	font-size: 24px;
+	font-weight: normal;
+	color: #707070;
+	line-height: 2.5;
+	margin-left: 5px;
 }
 
-@media all and (max-width: 839px) {
+@media all and (max-width: 480px) {
 .description__main {
-	font-size: 3.5vw
+	font-size: 17px;
+  line-height: 2.8;
 }
+
 }
 .title {
 	margin: 10px 0;
@@ -882,7 +891,7 @@ footer {
 	border: 2px #152062 solid
 }
 .logo {
-	height: 45px;
+	height: 40px;
 	max-height: 100%;
 	-webkit-display: flex;
 	-moz-display: flex;
@@ -892,15 +901,29 @@ footer {
 	display: flex;
 	justify-content: center
 }
+
+@media all and (max-width: 479px) {
+.logo {
+	height: 30px;
+}
+}
 .logo__image {
-	max-height: 100%
+	max-height: 100%;
+	margin-left: 10px;
 }
 .tel {
-	padding: 5px 0;
+	padding: 9px 0;
 	background-color: #FF9933;
 	text-align: center;
+	font-weight: bold;
+	margin: 0 10px;
 	color: #fff;
 }
+}
+
+
+
+
 
 @media all and (max-width: 839px) {
 .tel {
@@ -1281,6 +1304,75 @@ body[dir='rtl'] .formError .formErrorArrow, body.rtl .formError .formErrorArrow 
 }
 
 
+
+
+
+.page-title {
+	margin: 35px 0;
+	font-size: 18px;
+	text-align: center;
+}
+
+.page-title h1 {
+	font-size: 22px;
+	margin: 5px;
+}
+
+.magazine-number {
+	font-size: 32px;
+	position: relative;
+}
+
+.magazine-number:before {
+	content: url(../image/magazine-number.png);
+	margin: 10px;
+	position: absolute;
+	top: -45px;
+	left: 5%;
+}
+
+
+
+.main-magazine-img img {
+	border: 1px solid #eee;
+	margin-bottom: 30px;
+}
+
+
+.main-magazine-title {
+	font-size: 19px;
+	line-height: 1.7;
+	margin-left: 15px;
+}
+
+.main-magazine-text {
+	font-size: 15px;
+	line-height: 1.7;
+	margin-left: 15px;
+}
+
+
+.main-magazine-tel {
+	width: 250px;
+	padding: 15px;
+	font-size: 16px;
+	background-color: #FF9933;
+	text-align: center;
+	font-weight: bold;
+	margin-left: 15px;
+	color: #fff;
+}
+}
+
+
+
+
+
+@media all and (max-width: 839px) {
+.main-magazine-tel {
+	max-width: 300px
+}
+}
 
 
 
