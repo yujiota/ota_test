@@ -1,3 +1,0 @@
-// JavaScript Document
-
-function getUrlPalameter(a){var a=($(location).attr("search"),new Object),t=location.search.substring(1).split("&");for(i in t){var r=t[i].split("=");a[r[0]]=r[1]}return a}jQuery(function(){for(var a=$(location).attr("search"),t=new Object,r=location.search.substring(1).split("&"),e=0;r[e];e++){var i=r[e].split("=");t[i[0]]=i[1]}console.log(t.jigyousho_and_service_id),console.log(t.mail),$('[data-name="email"]').val(t.mail),jQuery(".js-page-link").each(function(){var t=jQuery(this),r=t.attr("href");t.attr("href",r+a)})});

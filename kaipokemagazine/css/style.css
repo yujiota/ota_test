@@ -344,8 +344,8 @@ footer {
 	padding: 2vw 0
 }
 }
-.inner--width-650 {
-	width: 650px
+.inner--width-750 {
+	width: 750px
 }
 .inner--width-800 {
 	width: 800px
@@ -1319,7 +1319,9 @@ body[dir='rtl'] .formError .formErrorArrow, body.rtl .formError .formErrorArrow 
 }
 
 .magazine-number {
-	font-size: 30px;
+	font-family: ヒラギノ角ゴ ProN;
+	color: #333;
+	font-size: 34px;
 	position: relative;
 }
 
@@ -1340,13 +1342,17 @@ body[dir='rtl'] .formError .formErrorArrow, body.rtl .formError .formErrorArrow 
 
 
 .main-magazine-title {
-	font-size: 19px;
+	font-family: ヒラギノ角ゴ ProN;
+	color: #333;
+	font-size: 24px;
 	line-height: 1.7;
 	margin-left: 15px;
 }
 
 .main-magazine-text {
-	font-size: 15px;
+	font-family: ヒラギノ角ゴ ProN;
+	color: #333;
+	font-size: 20px;
 	line-height: 1.7;
 	margin-left: 15px;
 	margin-bottom: 0px;

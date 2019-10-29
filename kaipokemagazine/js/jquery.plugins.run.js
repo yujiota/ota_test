@@ -1,3 +1,0 @@
-// JavaScript Document
-
-new WOW({mobile:!1}).init(),jQuery(document).ready(function(){jQuery("form").validationEngine({validateNonVisibleFields:!0,promptPosition:"topLeft",custom_error_messages:{"custom[phone]":{message:"0\u304b\u3089\u59cb\u307e\u308b\u6b63\u3057\u3044\u96fb\u8a71\u756a\u53f7\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044"}}})}),jQuery(function(){jQuery(".js-scroll").click(function(){var e=400,t=jQuery(this).attr("href"),n=jQuery("#"==t||""==t?"html":t),r=n.offset().top;return jQuery("body,html").animate({scrollTop:r},e,"swing"),!1})});
