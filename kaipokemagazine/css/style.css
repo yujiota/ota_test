@@ -258,6 +258,7 @@ footer {
 .wrapper--back-number {
 	background: #F8F6ED;
 	padding-bottom: 80px;
+	background-size: 80px 80px;
 	background-image: url(../image/bg_top_left.png),url(../image/bg_top_right.png),url(../image/bg_bottom_right.png),url(../image/bg_bottom_left.png);
 	background-repeat: no-repeat;
 	background-position: left top,right top,right bottom,left bottom;
@@ -265,7 +266,15 @@ footer {
 
 
 
-
+@media all and (min-width: 480px) {
+	.wrapper--back-number {
+		background: #F8F6ED;
+		padding-bottom: 80px;
+		background-image: url(../image/bg_top_left.png),url(../image/bg_top_right.png),url(../image/bg_bottom_right.png),url(../image/bg_bottom_left.png);
+		background-repeat: no-repeat;
+		background-position: left top,right top,right bottom,left bottom;
+	}
+}
 
 
 
@@ -344,11 +353,17 @@ footer {
 	padding: 2vw 0
 }
 }
-.inner--width-750 {
-	width: 750px
+.inner--width-780 {
+	width: 780px
 }
 .inner--width-800 {
 	width: 800px
+}
+.inner--width-850 {
+	width: 850px
+}
+.inner--width-1020 {
+	width: 1020px
 }
 .header__title {
 	padding: 10px 0;
@@ -717,9 +732,10 @@ footer {
 }
 .description__main {
 	font-size: 24px;
+	font-family: ヒラギノ角ゴシック;
 	font-weight: normal;
 	color: #707070;
-	line-height: 2.5;
+	margin-top: 20px;
 	margin-left: 5px;
 }
 
@@ -727,6 +743,7 @@ footer {
 .description__main {
 	font-size: 15px;
   line-height: 2.5;
+	margin-top: 11px;
 }
 
 }
@@ -915,19 +932,21 @@ footer {
 	padding: 9px 0;
 	background-color: #FF9933;
 	text-align: center;
+	font-family: ヒラギノ角ゴ ProN;
 	font-weight: bold;
 	margin: 0 10px;
+	font-size: 16px;
 	color: #fff;
 }
-}
-
-
-
-
 
 @media all and (max-width: 839px) {
 .tel {
-	max-width: 400px
+	max-width: 400px;
+}
+}
+@media all and (max-width: 480px) {
+.tel {
+	font-size: 12px;
 }
 }
 .tel__number {
@@ -1268,33 +1287,55 @@ body[dir='rtl'] .formError .formErrorArrow, body.rtl .formError .formErrorArrow 
 
 .back-number__book {
 	background-color: #fff;
+	height: 566px;
 	padding: 10px;
 	background: #FFFFFF 0% 0% no-repeat padding-box;
 	box-shadow: 0px 3px 6px #00000029;
 	opacity: 1;
 	margin-bottom: 30px;
+	text-align: left;
 	font-family: Hiragino Sans CNS;
 }
 
+
+@media all and (max-width: 840px) {
+.back-number__book {
+	text-align: center;
+}
+}
+
+
+
 .back-number__book img {
   border: 1px solid #eee;
+	width: 298px;
 }
 
 .back-number__book-year {
 	font-size: 20px;
   padding: 20px 0 13px 0;
+	font-family: Hiragino Kaku Gothic ProN;
+	width: 300px;
+  text-align: left;
+  margin: 0 auto;
 }
 
 .back-number__book-title {
 	font-family: Hiragino Kaku Gothic ProN;
 	font-size: 24px;
 	font-weight: bold;
+	width: 300px;
+	text-align: left;
+	margin: 0 auto;
 }
 
 .back-number__book-link {
 	font-family: Hiragino Kaku Gothic ProN;
 	font-size: 20px;
 	padding: 12px 0;
+	width: 300px;
+	text-align: left;
+	margin: 0 auto;
 }
 
 .back-number__book-link a {
@@ -1308,14 +1349,16 @@ body[dir='rtl'] .formError .formErrorArrow, body.rtl .formError .formErrorArrow 
 
 
 .page-title {
-	margin: 35px 0;
-	font-size: 18px;
+	margin: 35px 5px;
+	font-size: 20px;
 	text-align: center;
+	font-family: Hiragino Sans CNS;
 }
 
 .page-title h1 {
-	font-size: 22px;
+	font-size: 24px;
 	margin: 5px;
+	font-family: Hiragino Sans CNS;
 }
 
 .magazine-number {
@@ -1330,7 +1373,7 @@ body[dir='rtl'] .formError .formErrorArrow, body.rtl .formError .formErrorArrow 
 	margin: 10px;
 	position: absolute;
 	top: -45px;
-	left: 3%;
+	left: 5%;
 }
 
 
@@ -1338,7 +1381,17 @@ body[dir='rtl'] .formError .formErrorArrow, body.rtl .formError .formErrorArrow 
 .main-magazine-img img {
 	border: 1px solid #eee;
 	margin-bottom: 30px;
+	height: 462px;
+	float: right;
 }
+
+@media all and (max-width: 840px) {
+.main-magazine-img img {
+	width: 100%;
+	height: auto;
+}
+}
+
 
 
 .main-magazine-title {
@@ -1347,6 +1400,21 @@ body[dir='rtl'] .formError .formErrorArrow, body.rtl .formError .formErrorArrow 
 	font-size: 24px;
 	line-height: 1.7;
 	margin-left: 15px;
+	margin-top: -30px;
+}
+
+
+@media all and (max-width: 840px) {
+.main-magazine-title {
+	text-align: center;
+	margin: 0 auto;
+}
+}
+
+@media all and (max-width: 480px) {
+.main-magazine-title {
+	font-size: 20px;
+}
 }
 
 .main-magazine-text {
@@ -1358,35 +1426,43 @@ body[dir='rtl'] .formError .formErrorArrow, body.rtl .formError .formErrorArrow 
 	margin-bottom: 0px;
 }
 
+@media all and (max-width: 840px) {
+.main-magazine-text {
+	text-align: center;
+	margin: 0 auto;
+
+}
+}
+
 @media all and (max-width: 480px) {
 .main-magazine-text {
-	margin-bottom: 90px;
+	font-size: 16px;
 }
 }
-
-
 
 
 
 
 
 .main-magazine-tel {
-	width: 230px;
-	padding: 15px;
-	font-size: 18px;
+	width: 260px;
+	padding: 20px;
+	font-size: 20px;
+	font-family: ヒラギノ角ゴ ProN;
 	background-color: #FF9933;
 	text-align: center;
 	font-weight: bold;
 	margin-left: 15px;
 	color: #fff;
-	position: absolute;
 	bottom: 50px;
 }
 
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 840px) {
 .main-magazine-tel {
 	bottom: 35px;
+	margin: 0 auto;
+	margin-bottom: 30px;
 }
 }
 
