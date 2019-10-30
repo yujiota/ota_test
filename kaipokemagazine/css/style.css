@@ -1298,7 +1298,8 @@ body[dir='rtl'] .formError .formErrorArrow, body.rtl .formError .formErrorArrow 
 
 .back-number__book {
 	background-color: #fff;
-	height: 566px;
+	min-height: 566px;
+	height: auto;
 	padding: 10px;
 	background: #FFFFFF 0% 0% no-repeat padding-box;
 	box-shadow: 0px 3px 6px #00000029;
@@ -1359,7 +1360,9 @@ body[dir='rtl'] .formError .formErrorArrow, body.rtl .formError .formErrorArrow 
 	text-decoration: underline;
 }
 
-
+.back-number__book-link a:hover {
+	color: #1a0dab;
+}
 
 
 
@@ -1403,14 +1406,34 @@ body[dir='rtl'] .formError .formErrorArrow, body.rtl .formError .formErrorArrow 
 	left: 5%;
 }
 
-
+.main-magazine-img {
+	text-align: right;
+}
 
 .main-magazine-img img {
 	border: 1px solid #eee;
 	margin-bottom: 30px;
 	height: 462px;
 	float: right;
+	-moz-transition: -moz-transform 0.2s linear;
+	-webkit-transition: -webkit-transform 0.2s linear;
+	-o-transition: -o-transform 0.2s linear;
+	-ms-transition: -ms-transform 0.2s linear;
+	transition: transform 0.2s linear;
 }
+
+.main-magazine-img img:hover {
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+
+
+
+
 
 @media all and (max-width: 840px) {
 .main-magazine-img img {
@@ -1421,13 +1444,25 @@ body[dir='rtl'] .formError .formErrorArrow, body.rtl .formError .formErrorArrow 
 
 
 
+
+@media all and (max-width: 840px) {
+	.main-magazine-img img:hover {
+		-webkit-transform: scale(1.0);
+		-moz-transform: scale(1.0);
+		-o-transform: scale(1.0);
+		-ms-transform: scale(1.0);
+		transform: scale(1.0);
+	}
+}
+
+
 .main-magazine-title {
 	font-family: ヒラギノ角ゴ ProN;
 	color: #333;
 	font-size: 24px;
 	line-height: 1.7;
 	margin-left: 15px;
-	margin-top: -30px;
+	margin-top: -5px;
 }
 
 
@@ -1480,8 +1515,13 @@ body[dir='rtl'] .formError .formErrorArrow, body.rtl .formError .formErrorArrow 
 	text-align: center;
 	font-weight: bold;
 	margin-left: 15px;
+	margin-bottom: 30px;
 	color: #fff;
 	bottom: 50px;
+}
+
+.main-magazine-tel:hover{
+	background-color: #CC6600;
 }
 
 
@@ -1492,6 +1532,22 @@ body[dir='rtl'] .formError .formErrorArrow, body.rtl .formError .formErrorArrow 
 	margin-bottom: 30px;
 }
 }
+
+
+.tel:hover {
+	background-color: #CC6600;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1568,11 +1624,4 @@ body[dir='rtl'] .formError .formErrorArrow, body.rtl .formError .formErrorArrow 
 }
 .flex--no-wrap-phone {
 	flex-wrap: nowrap
-}
-
-.test-animation{
-  …
-  /* ５秒かけてアニメーションする */
-  -webkit-animation-duration: 5s;
-  animation-duration: 5s;
 }
