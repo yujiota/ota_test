@@ -16,8 +16,45 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" data-turbolinks-track="true"></script>
 
 
+
+
+
+<script type="text/javascript">
+<!--
+$(function() {
+  // mouseoverを使用
+  $(".wkBox2").mouseover(function() {
+    $(".tel").animate({fontSize : "24px"}, 500);
+  });
+  $(".wkBox2").mouseout(function(){
+    $(".tel").animate({fontSize : "16px"}, 500);
+  });
+});
+
+
+</script>
+
+
+
+
+
 </head>
 <body>
+
+
+
+
+  <div style="background-color:#CCC; height:100px;">
+    <div class="wkBox2" style="background-color:peachpuff;">mouseover</div>
+  </div>
+  　
+  <div style="background-color:#CCC; height:100px;">
+    <div class="wkBox3" style="background-color:peachpuff;">hover</div>
+  </div>
+
+
+
+
 
 <div class='mdl-layout'>
   <div class='wrapper wrapper--border-bottom mdl-color--white flex flex--center'>
