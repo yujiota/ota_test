@@ -1308,6 +1308,17 @@ body[dir='rtl'] .formError .formErrorArrow, body.rtl .formError .formErrorArrow 
 	font-family: Hiragino Sans CNS;
 }
 
+.back-number__book:hover {
+	background-color: #fff;
+	height: auto;
+	padding: 10px;
+	box-shadow: 0px 3px 6px #999;
+	opacity: 1;
+	margin-bottom: 30px;
+	text-align: left;
+	font-family: Hiragino Sans CNS;
+}
+
 
 @media all and (max-width: 840px) {
 .back-number__book {
