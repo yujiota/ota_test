@@ -1298,7 +1298,6 @@ body[dir='rtl'] .formError .formErrorArrow, body.rtl .formError .formErrorArrow 
 
 .back-number__book {
 	background-color: #fff;
-	min-height: 566px;
 	height: auto;
 	padding: 10px;
 	background: #FFFFFF 0% 0% no-repeat padding-box;
