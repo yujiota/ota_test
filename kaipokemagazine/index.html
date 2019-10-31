@@ -15,8 +15,56 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" data-turbolinks-track="true"></script>
 <script src="https://code.createjs.com/1.0.0/createjs.min.js" data-turbolinks-track="true"></script>
 
+
+
+
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">google.load("jquery", "1.2");</script>
+<script type="text/javascript" src="js/framework.js"></script>
+
+
+
+
+
 </head>
 <body>
+
+
+
+<!--
+  <ul id="navi">
+    <li class="all magazine-year"><a href="#">All</a></li>
+    <li class="magazine-year"><a href="#">2016</a></li>
+    <li class="magazine-year"><a href="#">2017</a></li>
+    <li class="magazine-year"><a href="#">2018</a></li>
+    <li class="magazine-year"><a href="#">2019</a></li>
+  </ul>
+
+  <ul id="portfolio">
+      <li class="2016"><a href="#">2016年春</a></li>
+      <li class="2017"><a href="#">2017年春</a></li>
+      <li class="2018"><a href="#">2018年春</a></li>
+      <li class="2019"><a href="#">2019年春</a></li>
+      <li class="2016"><a href="#">2016年夏</a></li>
+      <li class="2017"><a href="#">2017年夏</a></li>
+      <li class="2018"><a href="#">2018年夏</a></li>
+      <li class="2019"><a href="#">2019年夏</a></li>
+      <li class="2016"><a href="#">2016年秋</a></li>
+      <li class="2017"><a href="#">2017年秋</a></li>
+      <li class="2018"><a href="#">2018年秋</a></li>
+      <li class="2019"><a href="#">2019年秋</a></li>
+      <li class="2016"><a href="#">2016年冬</a></li>
+      <li class="2017"><a href="#">2017年冬</a></li>
+      <li class="2018"><a href="#">2018年冬</a></li>
+      <li class="2019"><a href="#">2019年冬</a></li>
+  </ul> -->
+
+
+
+
+
+
 
 <div class='mdl-layout'>
   <div class='wrapper wrapper--border-bottom mdl-color--white flex flex--center'>
@@ -103,240 +151,161 @@
   </div>
 
   <div class="wrapper wrapper--back-number">
-    <div class="inner inner--width-1020 mdl-grid flex">
+    <div class="inner inner--width-1020 mdl-grid">
       <div class="mdl-cell mdl-cell--12-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone flex flex--center">
         <div class="back-number__title">
           バックナンバー
         </div>
       </div>
-      <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone flex flex--side-center">
-        <div class="back-number__book">
-          <a href="">
-            <img src="./image/magazine_img.png">
-          </a>
-          <div class="back-number__book-year ">
-            2019春号
-          </div>
-          <div class="back-number__book-title ">
-          生き残るためのICT化生き残るためのICT化
-          </div>
-          <a href="">
-          <div class="back-number__book-link ">
-            <a href="">
-              マガジンの詳細を見る
-            </a>
-          </div>
-        </div>
+
+
+
+      <div class="mdl-cell mdl-cell--12-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone flex flex--center">
+        <ul id="navi">
+          <li class="all magazine-year"><a href="#">All</a></li>
+          <li class="magazine-year"><a href="#">2016</a></li>
+          <li class="magazine-year"><a href="#">2017</a></li>
+          <li class="magazine-year"><a href="#">2018</a></li>
+          <li class="magazine-year"><a href="#">2019</a></li>
+        </ul>
       </div>
-      <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone flex flex--side-center">
-        <div class="back-number__book">
-          <a href="">
-            <img src="./image/magazine_img.png">
-          </a>
-          <div class="back-number__book-year ">
-            2019春号
-          </div>
-          <div class="back-number__book-title ">
-          生き残るためのICT化
-          </div>
-          <a href="">
-          <div class="back-number__book-link ">
-            <a href="">
-              マガジンの詳細を見る
-            </a>
-          </div>
-        </div>
+
+
+      <div class="mdl-cell mdl-cell--12-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone flex flex--center">
+
+        <ul id="portfolio" class="mdl-grid">
+
+          <li class="2016 mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+            <div class="back-number__book">
+              <a href="">
+                <img src="./image/magazine_img.png">
+              </a>
+              <div class="back-number__book-year ">
+                2016春号
+              </div>
+              <div class="back-number__book-title ">
+              生き残るためのICT化生き残るためのICT化
+              </div>
+              <a href="">
+              <div class="back-number__book-link ">
+                <a href="">
+                  マガジンの詳細を見る
+                </a>
+              </div>
+            </div>
+          </li>
+
+
+          <li class="2017 mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+            <div class="back-number__book">
+              <a href="">
+                <img src="./image/magazine_img.png">
+              </a>
+              <div class="back-number__book-year ">
+                2017春号
+              </div>
+              <div class="back-number__book-title ">
+              生き残るためのICT化
+              </div>
+              <a href="">
+              <div class="back-number__book-link ">
+                <a href="">
+                  マガジンの詳細を見る
+                </a>
+              </div>
+            </div>
+          </li>
+
+
+          <li class="2018 mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+            <div class="back-number__book">
+              <a href="">
+                <img src="./image/magazine_img.png">
+              </a>
+              <div class="back-number__book-year ">
+                2018春号
+              </div>
+              <div class="back-number__book-title ">
+              生き残るためのICT化
+              </div>
+              <a href="">
+              <div class="back-number__book-link ">
+                <a href="">
+                  マガジンの詳細を見る
+                </a>
+              </div>
+            </div>
+          </li>
+
+
+          <li class="2019 mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+            <div class="back-number__book">
+              <a href="">
+                <img src="./image/magazine_img.png">
+              </a>
+              <div class="back-number__book-year ">
+                2019春号
+              </div>
+              <div class="back-number__book-title ">
+              生き残るためのICT化
+              </div>
+              <a href="">
+              <div class="back-number__book-link ">
+                <a href="">
+                  マガジンの詳細を見る
+                </a>
+              </div>
+            </div>
+          </li>
+
+
+          <li class="2016 mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+            <div class="back-number__book">
+              <a href="">
+                <img src="./image/magazine_img.png">
+              </a>
+              <div class="back-number__book-year ">
+                2016夏号
+              </div>
+              <div class="back-number__book-title ">
+              生き残るためのICT化
+              </div>
+              <a href="">
+              <div class="back-number__book-link ">
+                <a href="">
+                  マガジンの詳細を見る
+                </a>
+              </div>
+            </div>
+          </li>
+
+
+          <li class="2017 mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+            <div class="back-number__book">
+              <a href="">
+                <img src="./image/magazine_img.png">
+              </a>
+              <div class="back-number__book-year ">
+                2017夏号
+              </div>
+              <div class="back-number__book-title ">
+              生き残るためのICT化
+              </div>
+              <a href="">
+              <div class="back-number__book-link ">
+                <a href="">
+                  マガジンの詳細を見る
+                </a>
+              </div>
+            </div>
+          </li>
+
+
+        </ul>
       </div>
-      <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone flex flex--side-center">
-        <div class="back-number__book">
-          <a href="">
-            <img src="./image/magazine_img.png">
-          </a>
-          <div class="back-number__book-year ">
-            2019春号
-          </div>
-          <div class="back-number__book-title ">
-          生き残るためのICT化
-          </div>
-          <a href="">
-          <div class="back-number__book-link ">
-            <a href="">
-              マガジンの詳細を見る
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone flex flex--side-center">
-        <div class="back-number__book">
-          <a href="">
-            <img src="./image/magazine_img.png">
-          </a>
-          <div class="back-number__book-year ">
-            2019春号
-          </div>
-          <div class="back-number__book-title ">
-          生き残るためのICT化
-          </div>
-          <a href="">
-          <div class="back-number__book-link ">
-            <a href="">
-              マガジンの詳細を見る
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone flex flex--side-center">
-        <div class="back-number__book">
-          <a href="">
-            <img src="./image/magazine_img.png">
-          </a>
-          <div class="back-number__book-year ">
-            2019春号
-          </div>
-          <div class="back-number__book-title ">
-          生き残るためのICT化
-          </div>
-          <a href="">
-          <div class="back-number__book-link ">
-            <a href="">
-              マガジンの詳細を見る
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone flex flex--side-center">
-        <div class="back-number__book">
-          <a href="">
-            <img src="./image/magazine_img.png">
-          </a>
-          <div class="back-number__book-year ">
-            2019春号
-          </div>
-          <div class="back-number__book-title ">
-          生き残るためのICT化
-          </div>
-          <a href="">
-          <div class="back-number__book-link ">
-            <a href="">
-              マガジンの詳細を見る
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone flex flex--side-center">
-        <div class="back-number__book">
-          <a href="">
-            <img src="./image/magazine_img.png">
-          </a>
-          <div class="back-number__book-year ">
-            2019春号
-          </div>
-          <div class="back-number__book-title ">
-          生き残るためのICT化
-          </div>
-          <a href="">
-          <div class="back-number__book-link ">
-            <a href="">
-              マガジンの詳細を見る
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone flex flex--side-center">
-        <div class="back-number__book">
-          <a href="">
-            <img src="./image/magazine_img.png">
-          </a>
-          <div class="back-number__book-year ">
-            2019春号
-          </div>
-          <div class="back-number__book-title ">
-          生き残るためのICT化
-          </div>
-          <a href="">
-          <div class="back-number__book-link ">
-            <a href="">
-              マガジンの詳細を見る
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone flex flex--side-center">
-        <div class="back-number__book">
-          <a href="">
-            <img src="./image/magazine_img.png">
-          </a>
-          <div class="back-number__book-year ">
-            2019春号
-          </div>
-          <div class="back-number__book-title ">
-          生き残るためのICT化
-          </div>
-          <a href="">
-          <div class="back-number__book-link ">
-            <a href="">
-              マガジンの詳細を見る
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone flex flex--side-center">
-        <div class="back-number__book">
-          <a href="">
-            <img src="./image/magazine_img.png">
-          </a>
-          <div class="back-number__book-year ">
-            2019春号
-          </div>
-          <div class="back-number__book-title ">
-          生き残るためのICT化
-          </div>
-          <a href="">
-          <div class="back-number__book-link ">
-            <a href="">
-              マガジンの詳細を見る
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone flex flex--side-center">
-        <div class="back-number__book">
-          <a href="">
-            <img src="./image/magazine_img.png">
-          </a>
-          <div class="back-number__book-year ">
-            2019春号
-          </div>
-          <div class="back-number__book-title ">
-          生き残るためのICT化
-          </div>
-          <a href="">
-          <div class="back-number__book-link ">
-            <a href="">
-              マガジンの詳細を見る
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone flex flex--side-center">
-        <div class="back-number__book">
-          <a href="">
-            <img src="./image/magazine_img.png">
-          </a>
-          <div class="back-number__book-year ">
-            2019春号
-          </div>
-          <div class="back-number__book-title ">
-          生き残るためのICT化
-          </div>
-          <a href="">
-          <div class="back-number__book-link ">
-            <a href="">
-              マガジンの詳細を見る
-            </a>
-          </div>
-        </div>
-      </div>
+
+
+
     </div>
   </div>
 

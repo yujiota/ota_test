@@ -50,14 +50,15 @@ main {
 	margin: 0 auto
 }
 ul {
-	padding: 0;
-	list-style: none;
-	line-height: 2
+	width: 100%;
+	display: inherit;
 }
-ul li {
-	margin: 0;
-	padding: 0
+li {
+	width: 30%;
 }
+
+
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
