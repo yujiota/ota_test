@@ -52,12 +52,16 @@ main {
 ul {
 	width: 100%;
 	display: inherit;
+	list-style: none;
+	padding: 0;
 }
 li {
 	width: 30%;
 }
 
-
+.magazine-year-li {
+	width: 16%;
+}
 
 table {
 	border-collapse: collapse;
@@ -365,6 +369,9 @@ footer {
 }
 .inner--width-1020 {
 	width: 1020px
+}
+.inner--width-1060 {
+	width: 1060px
 }
 .header__title {
 	padding: 10px 0;
@@ -1283,7 +1290,7 @@ body[dir='rtl'] .formError .formErrorArrow, body.rtl .formError .formErrorArrow 
 	font-family: Hiragino Sans CNS;
 	font-weight: 300;
 	font-size: 34px;
-	padding: 50px 0;
+	padding: 50px 0 20px 0;
 }
 
 
@@ -1299,7 +1306,7 @@ body[dir='rtl'] .formError .formErrorArrow, body.rtl .formError .formErrorArrow 
 
 .back-number__book {
 	background-color: #fff;
-	height: auto;
+	height: 95%;
 	padding: 10px;
 	background: #FFFFFF 0% 0% no-repeat padding-box;
 	box-shadow: 0px 3px 6px #00000029;
@@ -1311,7 +1318,7 @@ body[dir='rtl'] .formError .formErrorArrow, body.rtl .formError .formErrorArrow 
 
 .back-number__book:hover {
 	background-color: #f0f0f0;
-	height: auto;
+	height: 95%;
 	padding: 10px;
 	box-shadow: 0px 3px 6px #999;
 	opacity: 1;
@@ -1322,9 +1329,24 @@ body[dir='rtl'] .formError .formErrorArrow, body.rtl .formError .formErrorArrow 
 
 
 @media all and (max-width: 840px) {
+.back-number__book:hover {
+	background-color: #fff;
+	height: auto;
+	padding: 10px;
+	box-shadow: 0px 3px 6px #00000029;
+	opacity: 1;
+	margin-bottom: 30px;
+	text-align: center;
+	font-family: Hiragino Sans CNS;
+}
+}
+
+
+@media all and (max-width: 840px) {
 .back-number__book {
 	text-align: center;
 	height: auto;
+	width: 100%;
 }
 }
 
@@ -1549,10 +1571,35 @@ body[dir='rtl'] .formError .formErrorArrow, body.rtl .formError .formErrorArrow 
 	background-color: #CC6600;
 }
 
+.magazine-year-wrap {
+	display: inline-block;
+	padding-left: 50px;
+}
 
+.magazine-year {
+	text-align: center;
+	width: 90%;
+	border: 1px solid #999;
+	background-color: #fff;
+	color: #999;
+	padding: 0 10px 0 0;
+	margin: 0 5px 15px 5px;
+	position: relative;
+}
 
+.magazine-year::after {
+	position: absolute;
+	content: "年";
+	color: #999;
+}
 
+#navi {
+	display: contents;
+}
 
+#portfolio {
+	margin-top: -30px;
+}
 
 
 
