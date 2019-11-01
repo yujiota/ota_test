@@ -1559,7 +1559,7 @@ body[dir='rtl'] .formError .formErrorArrow, body.rtl .formError .formErrorArrow 
 .magazine-year {
 	text-align: center;
 	width: 90%;
-	font-size: 14px;
+	font-size: 16px;
 	border: 1px solid #999;
 	background-color: #fff;
 	color: #444;
@@ -1572,6 +1572,7 @@ body[dir='rtl'] .formError .formErrorArrow, body.rtl .formError .formErrorArrow 
 @media all and (max-width: 480px) {
 	.magazine-year {
 		margin: 0 5px 10px 5px;
+		font-size: 14px;
 	}
 }
 
