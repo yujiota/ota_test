@@ -261,13 +261,6 @@ footer {
 	position: relative
 }
 
-
-
-
-
-
-
-
 .wrapper--back-number {
 	background: #F8F6ED;
 	padding-bottom: 30px;
@@ -276,8 +269,6 @@ footer {
 	background-repeat: no-repeat;
 	background-position: left top,right top,right bottom,left bottom;
 }
-
-
 
 @media all and (min-width: 480px) {
 	.wrapper--back-number {
@@ -288,12 +279,6 @@ footer {
 		background-position: left top,right top,right bottom,left bottom;
 	}
 }
-
-
-
-
-
-
 
 .wrapper--no-padding {
 	padding: 0
@@ -1291,12 +1276,6 @@ body[dir='rtl'] .formError .formErrorArrow, body.rtl .formError .formErrorArrow 
 }
 
 
-
-
-
-
-
-
 .back-number__title {
 	font-family: Hiragino Sans CNS;
 	font-weight: 300;
@@ -1311,8 +1290,6 @@ body[dir='rtl'] .formError .formErrorArrow, body.rtl .formError .formErrorArrow 
 	padding: 30px 0 0 0;
 }
 }
-
-
 
 
 .back-number__book {
@@ -1362,7 +1339,6 @@ body[dir='rtl'] .formError .formErrorArrow, body.rtl .formError .formErrorArrow 
 }
 
 
-
 .back-number__book img {
   border: 1px solid #eee;
 	width: 298px;
@@ -1407,8 +1383,6 @@ body[dir='rtl'] .formError .formErrorArrow, body.rtl .formError .formErrorArrow 
 .back-number__book-link a:hover {
 	color: #1a0dab;
 }
-
-
 
 .page-title {
 	margin: 35px 5px;
@@ -1474,19 +1448,12 @@ body[dir='rtl'] .formError .formErrorArrow, body.rtl .formError .formErrorArrow 
 	transform: scale(1.1);
 }
 
-
-
-
-
-
 @media all and (max-width: 840px) {
 .main-magazine-img img {
 	width: 100%;
 	height: auto;
 }
 }
-
-
 
 
 @media all and (max-width: 840px) {
@@ -1546,10 +1513,6 @@ body[dir='rtl'] .formError .formErrorArrow, body.rtl .formError .formErrorArrow 
 }
 }
 
-
-
-
-
 .main-magazine-tel {
 	width: 260px;
 	padding: 20px;
@@ -1587,13 +1550,20 @@ body[dir='rtl'] .formError .formErrorArrow, body.rtl .formError .formErrorArrow 
 	padding-left: 5%;
 }
 
+@media all and (max-width: 480px) {
+	.magazine-year-wrap {
+		padding-left: 7%;
+	}
+}
+
 .magazine-year {
 	text-align: center;
 	width: 90%;
+	font-size: 14px;
 	border: 1px solid #999;
 	background-color: #fff;
-	color: #999;
-	padding: 0 13px 0 0;
+	color: #444;
+	padding: 4px 13px 4px 0;
 	margin: 0 5px 15px 5px;
 	position: relative;
 }
@@ -1609,7 +1579,7 @@ body[dir='rtl'] .formError .formErrorArrow, body.rtl .formError .formErrorArrow 
 .magazine-year::after {
 	position: absolute;
 	content: "年";
-	color: #999;
+	color: #444;
 }
 
 #navi {
