@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>カーリース</title>
+    <meta content="" name="description">
+    <meta name="keywords">
+
+    <!-- OGP-->
+    <meta content="ja_JP" property="og:locale">
+    <meta content="website" property="og:type">
+    <meta content="カーリース" property="og:title">
+    <meta content="index.html" property="og:url">
+    <meta content="./img/ogp.jpg" property="og:image">
+    <meta content="カーリース" property="og:site_name">
+    <meta content="" property="og:description">
+    <!-- FONTS-->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:200,400,700,900" rel="stylesheet">
+    <!-- CSS-->
+    <link href="./css/main.css" type="text/css" rel="stylesheet">
+    <link href="./css/top.css" type="text/css" rel="stylesheet">
+
+    <!-- Google Tag Manager-->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-MV89QS');</script>
+    <!-- End Google Tag Manager-->
+  </head>
+  <body id="page-top">
+
+     <!-- Google Tag Manager (noscript)-->
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MV89QS" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript)-->
+
+    <!-- WRAPPER-->
+    <div class="wrapper">
+      <!-- NAVI-->
+      <nav class="navbar navbar-expand-xl"><a class="navbar-logo" href="index.html">
+          <div class="flex"><img src="./img/logo.png" alt="カイポケ×オリックス自動車">
+          </div></a>
+        <div class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="burger-wrapper">
+            <input type="checkbox">
+            <div class="bun">
+              <div class="burger"></div>
+            </div>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse small" id="navbarContent">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="about.html">カーリースとは</a></li>
+            <li class="nav-item"><a class="nav-link" href="pickup.html">今週のおすすめ</a></li>
+			<li class="nav-item"><a class="nav-link" href="index.html#carranking">人気ランキング</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#points">選ばれる理由</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#flow">納車までの流れ</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#faq">よくある質問</a></li>
+            <li class="nav-item nav-item-cta"><a class="btn nav-link-cta form" href="https://webcas.bm-sms.co.jp/fm/pub/043_o/carlease">
+                <div class="btn-inner"><span>無料相談する</span></div></a></li>
+            <li class="nav-item nav-item-cta"><a class="btn nav-link-cta tell" href="tel:0120-094-773">
+                <div class="btn-inner">
+                  <p>オリックス自動車カイポケ担当 平日9-18時</p><span>&#9990;&ensp;0120-094-773</span>
+                </div></a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- HEADER-->
+      <header class="header">
+        <div class="hero">
+          <div class="hero-box">
+            <h1 class="hero-box-ttl"><small>カイポケカーリース</small><strong>頭金0円</strong>
+              <p>月々1万円からはじめられる車両調達</p>
+            </h1>
+            <div class="hero-box-text">
+              <p>カイポケはオリックス自動車のパートナーとして<br>介護業界No.1の実績があり、好条件車両の紹介ができます!</p>
+            </div>
+            <div class="hero-box-cta">
+              <div class="cta cta-green">
+                <div class="cta-text">
+                  <p>専門スタッフがぴったりなご提案！</p>
+                </div>
+                <div class="cta-btn"><a class="btn" href="https://webcas.bm-sms.co.jp/fm/pub/043_o/carlease">
+                    <div class="btn-inner"><span>無料相談する</span></div></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-about"><a class="hero-about-inner" href="about.html">
+              <p>カーリースについて<br>知りたい</p></a></div>
+        </div>
+        <div class="pickup">
+          <div class="container">
+            <div class="pickup-box">
+              <div class="pickup-ttl">
+                <h2 class="ttl"><span>今週のおすすめ車両</span></h2>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-text">
+                  <div class="pickup-text anime-up" data-scroll>
+                    <ul id="this_week"></ul>
+                    <div class="pickup-text-btn"><a class="btn btn-shadow" href="pickup.html">
+                        <div class="btn-inner"><span>詳細をみる </span></div></a></div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-img">
+                  <div class="pickup-img"><a id="this_week_img" class="img-hover" href="pickup.html"></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+		<section class="section section-ranking">
+        <h2 class="ttl" id="carranking"><span>人気車両ランキング</span></h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="rank">
+                <div class="rank-img">
+                  <div class="rank-img-no no1">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 123.25 83.06">
+                      <path fill="#FCD356" d="M115.45,13.83a7.8,7.8,0,0,0-4.37,14.27L88.39,51.68,63.45,15.35a7.79,7.79,0,1,0-3.88,0L34.93,51.68,12,28.18A7.8,7.8,0,1,0,7.8,29.43a7.46,7.46,0,0,0,1-.06L15.9,83.06h91.2l7.16-53.73a7.8,7.8,0,1,0,1.19-15.5Z"></path>
+                    </svg><span>No.1</span>
+                  </div>
+                  <div class="rank-img-img"><a class="img-hover" href="ranking.html?tab=showNo1"><img src="./img/cars/alto.png" alt=""></a></div>
+                </div>
+                <div class="rank-text anime-up" data-scroll><span class="tag">特選中古車</span>
+                  <h3><small>ワンプライス中古車リース</small>月額9,900円～</h3>
+                  <p>嬉しい車検2年付き！<br>価格がお安く一番人気です！</p>
+                </div>
+                <div class="rank-btn"><a class="btn btn-shadow" href="ranking.html?tab=showNo1">
+                    <div class="btn-inner"><span>詳細をみる</span></div></a></div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="rank">
+                <div class="rank-img">
+                  <div class="rank-img-no no2">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 123.25 83.06">
+                      <path fill="#858583" d="M115.45,13.83a7.8,7.8,0,0,0-4.37,14.27L88.39,51.68,63.45,15.35a7.79,7.79,0,1,0-3.88,0L34.93,51.68,12,28.18A7.8,7.8,0,1,0,7.8,29.43a7.46,7.46,0,0,0,1-.06L15.9,83.06h91.2l7.16-53.73a7.8,7.8,0,1,0,1.19-15.5Z"></path>
+                    </svg><span>No.2</span>
+                  </div>
+                  <div class="rank-img-img"><a class="img-hover" href="ranking.html?tab=showNo2"><img src="./img/cars/HondaSENSHING.png" alt=""></a></div>
+                </div>
+                <div class="rank-text anime-up" data-scroll><span class="tag">特選新車</span>
+                  <h3><small>N-BOX G HondaSENSHING </small>月額21,450円～</h3>
+                  <p>介護事業所の方に人気のN-BOX！<br>福祉車両もあります！</p>
+                </div>
+                <div class="rank-btn"><a class="btn btn-shadow" href="ranking.html?tab=showNo2">
+                    <div class="btn-inner"><span>詳細をみる</span></div></a></div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="rank">
+                <div class="rank-img">
+                  <div class="rank-img-no no3">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 123.25 83.06">
+                      <path fill="#9F7D64" d="M115.45,13.83a7.8,7.8,0,0,0-4.37,14.27L88.39,51.68,63.45,15.35a7.79,7.79,0,1,0-3.88,0L34.93,51.68,12,28.18A7.8,7.8,0,1,0,7.8,29.43a7.46,7.46,0,0,0,1-.06L15.9,83.06h91.2l7.16-53.73a7.8,7.8,0,1,0,1.19-15.5Z"></path>
+                    </svg><span>No.3</span>
+                  </div>
+                  <div class="rank-img-img"><a class="img-hover" href="ranking.html?tab=showNo3"><img src="./img/cars/hiace.png" alt=""></a></div>
+                </div>
+                <div class="rank-text anime-up" data-scroll><span class="tag">特選新車</span>
+                  <h3><small>ハイエースワゴンウェルジョイン</small>月額41,800円～</h3>
+                  <p>10人乗りで送迎時にぴったり！</p>
+                </div>
+                <div class="rank-btn"><a class="btn btn-shadow" href="ranking.html?tab=showNo3">
+                    <div class="btn-inner"><span>詳細をみる</span></div></a></div>
+              </div>
+            </div>
+            <div class="col-12">
+              <p class="anno">※画像はイメージとなります</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-point">
+        <h2 class="ttl" id="points"><span>カイポケカーリースが選ばれる理由</span></h2>
+        <div class="container">
+          <div class="points">
+            <div class="point point01">
+              <div class="point-text anime-up" data-scroll>
+                <h3>業界大手オリックスだからできる安価な車両価格！</h3>
+                <p>オリックス自動車は業界の牽引役として自動車リースにとどまらず、レンタカー事業、カーシェアリング事業も展開しています。</p>
+                <p>管理する車両は100万台を超えており、<strong>新車を大量購入するオリックス自動車の調達力で、好条件のリース料をご提示いたします。</strong></p>
+                <p>また、中古車に関しては常時約300台をラインナップ。<strong>中古車ならではのリース料と、短納期を実現しています。</strong></p>
+              </div>
+              <div class="point-img"><img src="./img/point01.jpg" alt="">
+              </div>
+            </div>
+            <div class="point point02">
+              <div class="point-text anime-up" data-scroll>
+                <h3>カイポケはオリックス自動車のパートナーとして介護業界No.1の実績があり、好条件の車両をご提供できます！</h3>
+                <p>カイポケはオリックス自動車のパートナーとして、中古車部門は<strong>介護業界No.1の実績があり、オリックス自動車から好条件の車両を優先的に提供を受けています。</strong>そのためカイポケ会員限定の車両等をご紹介することができます。</p>
+              </div>
+              <div class="point-img"><img src="./img/point02.jpg" alt="">
+              </div>
+            </div>
+            <div class="point point03">
+              <div class="point-text anime-up" data-scroll>
+                <h3>介護事業所への豊富な提案経験を持つ「カイポケ会員専門スタッフ」が対応させていただきます。</h3>
+                <p>オリックス自動車内には<strong>カイポケ会員様用窓口を設置し、介護事業所への豊富な提案経験を持つスタッフが対応させていただきます。</strong><br>予算や用途に応じた最適な提案が可能なので、お気軽にご相談ください。</p>
+              </div>
+              <div class="point-img"><img src="./img/point03.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="points-cta">
+            <div class="cta cta-green">
+              <div class="cta-text">
+                <p>専門スタッフがぴったりなご提案！</p>
+              </div>
+              <div class="cta-btn"><a class="btn" href="https://webcas.bm-sms.co.jp/fm/pub/043_o/carlease">
+                  <div class="btn-inner"><span>無料相談する</span></div></a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-flow">
+        <h2 class="ttl" id="flow"><span>納車までの流れ</span></h2>
+        <div class="container">
+          <div class="flow">
+            <div class="steps steps01">
+              <div class="step step01"><span>無料相談</span></div>
+              <div class="step step02"><span>お見積り提示</span></div>
+              <div class="step step03"><span>リース審査</span></div>
+            </div>
+            <div class="steps steps02">
+              <div class="step step04"><span>契約</span></div>
+              <div class="step step05"><span>納車</span></div>
+              <p>契約締結後最短3週間<small>※中古車の場合</small></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-faq">
+        <h2 class="ttl" id="faq"><span>よくある質問</span></h2>
+        <div class="container">
+          <div class="faq">
+            <h3 class="faq-ttl">車両について</h3>
+            <dl class="faq-block">
+              <dt>Webサイトに掲載されていない車種も選べますか？福祉車両は取り扱っていますか？</dt>
+              <dd>全メーカー・全車種の中からお客様のお好きな車両をお選びいただけます。もちろん福祉車両の取り扱いもございます。</dd>
+            </dl>
+            <dl class="faq-block">
+              <dt>契約時にオプション品はつけられますか？カー用品等の後付けは出来ますか？</dt>
+              <dd>カーナビ、ETC等のオプションの他、お客様ご要望のオプションをつけることも可能です。<br>また、お客様所有のカー用品をお取り付けいただくことも可能です（但し、違法改造は不可）。</dd>
+            </dl>
+          </div>
+          <div class="faq">
+            <h3 class="faq-ttl">納車について</h3>
+            <dl class="faq-block">
+              <dt>納車までの期間はどの位かかりますか？</dt>
+              <dd>新車の場合、リースの契約手続きが完了（契約書締結）してから、通常は1～2ヶ月程度で納車できます。<br>中古車の場合は約3週間程度で納車となります（但し、整備状況等によってはそれ以上かかる場合があります）。</dd>
+            </dl>
+            <dl class="faq-block">
+              <dt>全国どこでも納車してもらえますか？</dt>
+              <dd>一部の離島を除いて全国納車可能です。ただし、北海道・沖縄県へのご納車の場合は別途陸送費用相当額をリース料に加算させていただきます。詳しくはお問合せください。</dd>
+            </dl>
+          </div>
+          <div class="faq">
+            <h3 class="faq-ttl">リース料・リース期間について</h3>
+            <dl class="faq-block">
+              <dt>リース料は経費扱いになりますか？</dt>
+              <dd>毎月のリース料は損金処理することができます。<br>（リース資産として、資産計上、減価償却が必要になる場合もございます）</dd>
+            </dl>
+            <dl class="faq-block">
+              <dt>リース期間が満了したらどうなりますか？</dt>
+              <dd>基本リース期間（例えば72ヵ月）が満了した場合はクルマを引揚させて頂き、その後の支払いはございません。<br>ただしお客様が車両の使用の継続をご希望される場合は12ヵ月（もしくは24ヵ月）の再リース契約を締結することも可能です。</dd>
+            </dl>
+          </div>
+          <div class="faq">
+            <h3 class="faq-ttl">カイポケカーリースについて</h3>
+            <dl class="faq-block">
+              <dt>カイポケカーリースの中古車は他社と何が違うのですか？</dt>
+              <dd>カイポケカーリースの中古車は、提携先のオリックス自動車が管理していたリース・レンタカーアップ車両が中心です。<br>自社所有車両を直接販売する直販スタイルなので価格に自信があります。<br>その中でも状態が良く、安心してお乗りいただける中古車を厳選して販売し、納車前にきちんと法定整備を実施してからご納車いたしますのでさらに安心の大きさが違います。</dd>
+            </dl>
+            <dl class="faq-block">
+              <dt>カイポケ経由で相談すると何が良いのですが？</dt>
+              <dd>介護事業所へのリース提案実績が豊富なカイポケ会員専門スタッフが最適なプランをご案内いたします。</dd>
+            </dl>
+          </div>
+          <div class="faq">
+            <h3 class="faq-ttl">無料相談について</h3>
+            <dl class="faq-block">
+              <dt>まだ車両やオプションを決めかねているのですが相談に乗ってもらえますか？</dt>
+              <dd>もちろんです。介護事業所への提案実績が豊富なスタッフが多数在籍しておりますので、ご予算や用途をお伝えいただければ最適な提案をさせていただきます。押し売り営業は一切いたしませんのでご安心ください。</dd>
+            </dl>
+            <dl class="faq-block">
+              <dt>電話できる時間が限られているのですが、日時を指定しての無料相談はできますか？</dt>
+              <dd>可能です。無料相談のお申し込み時にご都合の良い日時（複数ご提示をお願いします）を記載いただければ、ご指定の日時にご連絡差し上げます。お急ぎの場合はオリックス自動車カイポケ担当【0120-094-773（平日9~18時）】までお問い合わせください。</dd>
+            </dl>
+          </div>
+        </div>
+      </section>
+      <!-- CTA-->
+      <aside class="aside">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="cta cta-green">
+                <div class="cta-text">
+                  <p>専門スタッフがぴったりなご提案！</p>
+                </div>
+                <div class="cta-btn"><a class="btn" href="https://webcas.bm-sms.co.jp/fm/pub/043_o/carlease">
+                    <div class="btn-inner"><span>無料相談する</span></div></a></div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="cta cta-gray">
+                <div class="cta-text">
+                  <p>今すぐ電話でご相談！</p>
+                  <p class="small">オリックス自動車カイポケ担当 平日9-18時</p>
+                </div>
+                <div class="cta-btn"><a class="btn btn-gray" href="tel:0120-094-773">
+                    <div class="btn-inner"><span>0120-094-773</span></div></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <!-- FOOTER-->
+      <footer class="footer">
+        <div class="scrollTop"><a class="to-top"></a></div>
+        <div class="container">
+          <p class="copyright">Copyright © SMS Co.,Ltd. All Rights Reserved.</p>
+        </div>
+      </footer>
+    </div>
+    <!-- JS-->
+    <!-- <script src="./js/jquery/jquery-3.3.1.min.js"></script> -->
+    <script src="./js/jquery/jquery-1.10.2.min.js"></script>
+    <script src="./js/csv/jquery.csv.min.js"></script>
+    <script src="./js/csv/carlist-index.csv.js"></script>
+    <script src="./js/bootstrap/bootstrap.min.js"></script>
+    <script src="./js/scroll-out/scroll-out.min.js"></script>
+    <script src="./js/main.min.js"></script>
+    <!-- Google Tag Manager (noscript)-->
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MV89QS" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript)-->
+  </body>
+</html>
