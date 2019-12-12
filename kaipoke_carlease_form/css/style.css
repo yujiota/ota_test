@@ -944,8 +944,8 @@ footer {
 }
 }
 .logo__image {
-	max-height: 100%;
-	margin-left: 10px;
+	max-width: 500px;
+	margin: 20px 10px;
 }
 .tel {
 	padding: 9px 0;
