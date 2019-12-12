@@ -300,8 +300,16 @@ footer {
 }
 .wrapper--border-bottom {
 	height: 64px;
-	border-bottom: 4px solid #457e67
+	border-bottom: 5px solid #457e67;
+	margin-bottom: 30px;
 }
+
+@media all and (min-width: 480px) {
+	.wrapper--border-bottom {
+		margin-bottom: 10px;
+	}
+}
+
 .wrapper--orange {
 	background-color: #ff9800
 }
