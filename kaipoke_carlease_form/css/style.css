@@ -299,7 +299,7 @@ footer {
 	border-top: 5px solid #ff9800
 }
 .wrapper--border-bottom {
-	height: 64px;
+	height: auto;
 	border-bottom: 5px solid #457e67;
 }
 
@@ -927,7 +927,7 @@ footer {
 	border: 2px #152062 solid
 }
 .logo {
-	height: 50px;
+	height: 80px;
 	max-height: 100%;
 	-webkit-display: flex;
 	-moz-display: flex;
@@ -945,7 +945,6 @@ footer {
 }
 .logo__image {
 	max-height: 100%;
-	margin: 20px 10px;
 }
 .tel {
 	padding: 9px 0;
