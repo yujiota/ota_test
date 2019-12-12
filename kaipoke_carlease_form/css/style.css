@@ -301,13 +301,6 @@ footer {
 .wrapper--border-bottom {
 	height: 64px;
 	border-bottom: 5px solid #457e67;
-	margin-bottom: 30px;
-}
-
-@media all and (min-width: 480px) {
-	.wrapper--border-bottom {
-		margin-bottom: 10px;
-	}
 }
 
 .wrapper--orange {
@@ -380,6 +373,11 @@ footer {
 .inner--width-1020 {
 	width: 1020px
 }
+
+.inner--width-100per {
+	width: 100%;
+}
+
 .inner--width-1060 {
 	width: 1060px
 }
