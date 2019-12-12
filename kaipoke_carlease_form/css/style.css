@@ -246,13 +246,19 @@ footer {
 	font-size: 12px;
 	background-color: #F0F1F2;
 	height: 50px;
-	color: #707070;
+	color: #F0F4F3;
 	text-align: center;
 }
 .footer-privacy-img img {
 	width: 65px;
 	height: 65px
 }
+
+.pre-footer{
+	background-color: #707070;
+}
+
+
 .wrapper {
 	width: 100%;
 	max-width: 100%;
