@@ -1612,6 +1612,54 @@ body[dir='rtl'] .formError .formErrorArrow, body.rtl .formError .formErrorArrow 
 
 
 
+CSS
+.scrollArea{
+	height: 200px;
+	overflow: auto;
+	padding-right: 20px;
+}
+/*スクロールバーの横幅指定*/
+.scrollArea.deco::-webkit-scrollbar {
+    width: 15px;
+}
+/*スクロールバーの背景色・角丸指定*/
+.scrollArea.deco::-webkit-scrollbar-track {
+  border-radius: 10px;
+	background: #f2f2f2;
+}
+/*スクロールバーの色・角丸指定*/
+.scrollArea.deco::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+	background:#09C9D9;
+}
+
+
+
+.scrollArea{
+	height: 200px;
+	overflow: auto;
+	padding-right: 20px;
+}
+/*スクロールバーの横幅指定*/
+.scrollArea.deco::-webkit-scrollbar {
+    width: 15px;
+}
+/*スクロールバーの背景色・角丸指定*/
+.scrollArea.deco::-webkit-scrollbar-track {
+  border-radius: 10px;
+	background: #f2f2f2;
+}
+/*スクロールバーの色・角丸指定*/
+.scrollArea.deco::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+	background:#09C9D9;
+}
+
+
+
+
+
+
 .flex {
 	-webkit-display: flex;
 	-moz-display: flex;
