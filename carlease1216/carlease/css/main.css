@@ -26,3 +26,243 @@
   position: relative;
   border-bottom: 5px solid #2E8065;
 }
+
+.navbar-no-border{
+  border-bottom: 0px solid #fff;
+}
+
+.thanks-top{
+  background-color: #F1F4F2;
+}
+
+.thanks-flow{
+  background-color: #EBE9E6;
+  text-align: center;
+}
+
+.thanks-link{
+  background-color: #F1F4F2;
+  display: grid;
+}
+
+.thanks-title{
+  font-size: 32px;
+  text-align: center;
+  padding-top: 30px;
+  color: #333333;
+  font-weight: bold;
+}
+
+.thanks-flow img{
+  margin: 0 auto;
+  padding: 20px 15px 30px 15px;
+  width: 100%;
+  max-width: 1085px;
+}
+
+.thanks-pc img{
+  display: none;
+}
+
+@media screen and (min-width:545px) {
+  .thanks-pc img{
+    display: none;
+  }
+}
+
+@media screen and (min-width:544px) {
+  /*　画面サイズが480pxからはここを読み込む　*/
+  .thanks-pc img{
+    display: block;
+  }
+}
+
+.thanks-sp img{
+  display: block;
+}
+
+@media screen and (min-width:545px) {
+  .thanks-sp img{
+    display: block;
+  }
+}
+
+@media screen and (min-width:544px) {
+  /*　画面サイズが480pxからはここを読み込む　*/
+  .thanks-sp img{
+    display: none;
+  }
+}
+
+.thanks-kaipochi img{
+  display: none;
+}
+
+@media screen and (min-width:651px) {
+  .thanks-kaipochi img{
+    display: none;
+  }
+}
+
+@media screen and (min-width:650px) {
+  /*　画面サイズが480pxからはここを読み込む　*/
+  .thanks-kaipochi img{
+    display: block;
+  }
+}
+
+.thanks-title-small{
+  font-size: 24px;
+  text-align: center;
+  padding-top: 30px;
+  color: #333333;
+  font-weight: bold;
+}
+
+.thanks-title-bar{
+  margin: 0 auto;
+  width: 185px;
+  border-bottom: 5px solid #2E8065;
+}
+
+.thanks-text-area{
+  width: 100%;
+  max-width: 610px;
+  margin: 0 auto;
+}
+
+.thanks-text-area ::after{
+  background-image: url(../img/kaipochi.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-color: blue;
+  height: 100px;
+  width: 100px;
+}
+
+.thanks-text{
+  width: auto;
+  font-size: 20px;
+  margin: 0;
+  padding: 50px 15px 70px 15px;
+  color: #333;
+}
+
+.button-area{
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+  display: block;
+  min-height: 200px;
+  padding: 40px 0;
+}
+
+.button{
+  background: #fff;
+  width: 100%;
+  float: left;
+  margin: 0 auto;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+  text-align: center;
+  height: 240px;
+}
+
+@media screen and (min-width:871px) {
+  .button{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width:870px) {
+  /*　画面サイズが480pxからはここを読み込む　*/
+  .button{
+    width: 31%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+.button-title{
+  font-family: A-OTF Shin Maru Go Pro;
+  color: #333333;
+  font-size: 24px;
+}
+
+.button-text{
+  font-family: 源ノ角ゴシック JP;
+  color: #333333;
+  font-size: 17px;
+  margin: 20px 5px;
+  line-height: 1.4;
+}
+
+.button img{
+  width: auto;
+  height: 50px;
+}
+
+.thanks-text-bold{
+  font-weight: bold;
+}
+
+.thanks-text img{
+  width: 110px;
+  float: right;
+  margin-top: -80px;
+}
+
+.button-text-area{
+  margin: 0 auto;
+  width: 100%;
+  max-width: 520px;
+}
+
+.button-text-green{
+  background-color: #3FA483;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 19px;
+  font-family: Hiragino Maru Gothic Std;
+  text-align: center;
+  max-width: 520px;
+  padding: 10px;
+}
+
+.button-text-orange{
+  background-color: #F09C2A;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 19px;
+  font-family: Hiragino Maru Gothic Std;
+  text-align: center;
+  max-width: 520px;
+  padding: 10px;
+}
+
+.width100{
+  width: 100%;
+}
+
+.margin-bottom35{
+  margin-bottom: 35px;
+}
+
+.margin-bottom60{
+  margin-bottom: 60px;
+}
