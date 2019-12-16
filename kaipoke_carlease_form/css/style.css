@@ -1636,10 +1636,25 @@ CSS
 
 
 .scrollArea{
-	height: 200px;
+	height: 100%;
 	overflow: auto;
 	padding-right: 20px;
 }
+.scrollArea dl::after{
+	content: "";
+  clear: both;
+  display: block;
+}
+.scrollArea dl dt{
+	float: left;
+	clear: both;
+}
+.scrollArea dl dd{
+	padding: 0 0 10px 100px;
+	margin: 0 0 10px 0;
+	border-bottom: dotted 1px #CCC;
+}
+
 /*スクロールバーの横幅指定*/
 .scrollArea.deco::-webkit-scrollbar {
     width: 15px;
@@ -1654,7 +1669,6 @@ CSS
   border-radius: 10px;
 	background:#09C9D9;
 }
-
 
 
 
