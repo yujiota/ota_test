@@ -24,4 +24,5 @@
 
 .navbar{
   position: relative;
+  border-bottom: 5px solid #2E8065;
 }
