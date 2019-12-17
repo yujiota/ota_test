@@ -31,6 +31,10 @@
   border-bottom: 0px solid #fff;
 }
 
+.navbar-margin-bottom{
+  margin-bottom: 15px;
+}
+
 .thanks-top{
   background-color: #F1F4F2;
 }
@@ -154,12 +158,12 @@
   margin: 0 auto;
   display: block;
   min-height: 200px;
-  padding: 40px 0;
+  padding: 40px 5px;
 }
 
 .button{
   background: #fff;
-  width: 100%;
+  width: 29%;
   float: left;
   margin: 0 auto;
   margin-left: 10px;
@@ -173,7 +177,7 @@
 
 @media screen and (min-width:871px) {
   .button{
-    width: 100%;
+    width: 29%;
     margin-top: 20px;
     margin-bottom: 20px;
   }
@@ -230,7 +234,8 @@
 .button-text-area{
   margin: 0 auto;
   width: 100%;
-  max-width: 520px;
+  padding: 20px;
+  max-width: 560px;
 }
 
 .button-text-green{
