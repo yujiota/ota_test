@@ -20,6 +20,11 @@
 .footer-address-text{
   margin: 0 auto;
   padding: 15px 10px;
+  font-family: Noto sans jp;
+}
+
+.copyright{
+  font-family: Noto sans jp;
 }
 
 .navbar{
@@ -32,7 +37,7 @@
 }
 
 .navbar-margin-bottom{
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .thanks-top{
@@ -50,19 +55,84 @@
 }
 
 .thanks-title{
-  font-size: 32px;
+  font-size: 18px;
   text-align: center;
   padding-top: 30px;
   color: #333333;
   font-weight: bold;
+  font-family: Noto sans jp;
 }
+
+@media screen and (min-width:545px) {
+  /*　画面サイズが480pxから下はここを読み込む　*/
+  .thanks-title{
+    font-size: 18px;
+    text-align: center;
+    padding-top: 30px;
+    color: #333333;
+    font-weight: bold;
+    font-family: Noto sans jp;
+  }
+}
+
+@media screen and (min-width:544px) {
+  /*　画面サイズが480pxから上はここを読み込む　*/
+  .thanks-title{
+    font-size: 32px;
+    text-align: center;
+    padding-top: 30px;
+    color: #333333;
+    font-weight: bold;
+    font-family: Noto sans jp;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .thanks-flow img{
   margin: 0 auto;
   padding: 20px 15px 30px 15px;
   width: 100%;
-  max-width: 1085px;
+  max-width: 238px;
 }
+
+@media screen and (min-width:545px) {
+  /*　画面サイズが480pxから下はここを読み込む　*/
+  .thanks-flow img{
+    margin: 0 auto;
+    padding: 20px 15px 30px 15px;
+    width: 100%;
+    max-width: 238px;
+  }
+}
+
+@media screen and (min-width:544px) {
+  /*　画面サイズが480pxから上はここを読み込む　*/
+  .thanks-flow img{
+    margin: 0 auto;
+    padding: 20px 15px 30px 15px;
+    width: 100%;
+    max-width: 1085px;
+  }
+}
+
+
+
+
+
+
+
+
+
 
 .thanks-pc img{
   display: none;
@@ -116,12 +186,43 @@
 }
 
 .thanks-title-small{
-  font-size: 24px;
+  font-size: 16px;
   text-align: center;
   padding-top: 30px;
   color: #333333;
   font-weight: bold;
+  font-family: Noto sans jp;
 }
+
+@media screen and (min-width:545px) {
+  /*　画面サイズが480pxから下はここを読み込む　*/
+  .thanks-title-small{
+    font-size: 16px;
+    text-align: center;
+    padding-top: 30px;
+    color: #333333;
+    font-weight: bold;
+    font-family: Noto sans jp;
+  }
+}
+
+@media screen and (min-width:544px) {
+  /*　画面サイズが480pxから上はここを読み込む　*/
+  .thanks-title-small{
+    font-size: 24px;
+    text-align: center;
+    padding-top: 30px;
+    color: #333333;
+    font-weight: bold;
+    font-family: Noto sans jp;
+  }
+}
+
+
+
+
+
+
 
 .thanks-title-bar{
   margin: 0 auto;
@@ -144,58 +245,144 @@
   width: 100px;
 }
 
+
+
+
+
+
 .thanks-text{
   width: auto;
-  font-size: 20px;
+  font-size: 14px;
   margin: 0;
-  padding: 50px 15px 70px 15px;
+  padding: 25px 15px 35px 15px;
   color: #333;
+  text-align: center;
+  font-family: Noto sans jp;
 }
+
+@media screen and (min-width:545px) {
+  /*　画面サイズが480pxから下はここを読み込む　*/
+  .thanks-text{
+    width: auto;
+    font-size: 14px;
+    margin: 0;
+    padding: 25px 15px 35px 15px;
+    color: #333;
+    text-align: center;
+    font-family: Noto sans jp;
+  }
+}
+
+@media screen and (min-width:544px) {
+  /*　画面サイズが480pxから上はここを読み込む　*/
+  .thanks-text{
+    width: auto;
+    font-size: 20px;
+    margin: 0;
+    padding: 50px 15px 70px 15px;
+    color: #333;
+    text-align: left;
+    font-family: Noto sans jp;
+  }
+}
+
+
+
+
+
+
 
 .button-area{
   width: 100%;
-  max-width: 920px;
+  max-width: 930px;
   margin: 0 auto;
   display: block;
   min-height: 200px;
-  padding: 40px 5px;
+  padding: 20px 10px;
 }
+
+@media screen and (min-width:545px) {
+  /*　画面サイズが480pxから下はここを読み込む　*/
+  .button-area{
+    width: 100%;
+    max-width: 930px;
+    margin: 0 auto;
+    display: block;
+    min-height: 200px;
+    padding: 20px 10px;
+  }
+}
+
+@media screen and (min-width:544px) {
+  /*　画面サイズが480pxから上はここを読み込む　*/
+  .button-area{
+    width: 100%;
+    max-width: 930px;
+    margin: 0 auto;
+    display: block;
+    min-height: 200px;
+    padding: 40px 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
 
 .button{
   background: #fff;
   width: 29%;
   float: left;
   margin: 0 auto;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 4px;
+  margin-right: 4px;
   margin-top: 10px;
   margin-bottom: 10px;
-  padding: 20px;
+  padding: 10px 5px;
   text-align: center;
-  height: 240px;
+  box-shadow: 0px 3px 6px #00000029;
 }
 
-@media screen and (min-width:871px) {
+@media screen and (min-width:545px) {
   .button{
+    background: #fff;
     width: 29%;
+    float: left;
+    margin: 0 auto;
+    margin-left: 4px;
+    margin-right: 4px;
     margin-top: 20px;
     margin-bottom: 20px;
+    padding: 10px 5px;
+    text-align: center;
+    box-shadow: 0px 3px 6px #00000029;
+
   }
 }
 
-@media screen and (min-width:870px) {
+@media screen and (min-width:544px) {
   /*　画面サイズが480pxからはここを読み込む　*/
   .button{
     width: 31%;
     margin-top: 10px;
     margin-bottom: 10px;
+    padding: 20px 5px;
+    box-shadow: 0px 3px 6px #00000029;
+
   }
 }
 
 
 
 
-
+.button-area :hover{
+  background: #f7f7f7;
+}
 
 
 
@@ -203,23 +390,103 @@
 
 
 .button-title{
-  font-family: A-OTF Shin Maru Go Pro;
+  font-family: Noto sans jp;
   color: #333333;
-  font-size: 24px;
+  font-size: 11px;
 }
 
-.button-text{
-  font-family: 源ノ角ゴシック JP;
-  color: #333333;
-  font-size: 17px;
-  margin: 20px 5px;
-  line-height: 1.4;
+@media screen and (min-width:350px) {
+  .button-title{
+    font-family: Noto sans jp;
+    color: #333333;
+    font-size: 14px;
+  }
 }
+
+@media screen and (min-width:544px) {
+  .button-title{
+    font-family: Noto sans jp;
+    color: #333333;
+    font-size: 24px;
+  }
+}
+
+
+
+
+
+
+
+
+
+.button-text{
+  font-family: Noto sans jp;
+  color: #333333;
+  font-size: 10px;
+  margin: 5px;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+@media screen and (min-width:545px) {
+  .button-text{
+    font-family: Noto sans jp;
+    color: #333333;
+    font-size: 10px;
+    margin: 20px 5px;
+    line-height: 1.4;
+    text-align: justify;
+  }
+}
+
+@media screen and (min-width:544px) {
+  /*　画面サイズが480pxからはここを読み込む　*/
+  .button-text{
+    font-family: Noto sans jp;
+    color: #333333;
+    font-size: 17px;
+    margin: 20px 5px 10px 5px;
+    line-height: 1.4;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
 
 .button img{
   width: auto;
-  height: 50px;
+  height: 23px;
+  margin-top: -20px;
 }
+
+@media screen and (min-width:545px) {
+  .button img{
+    width: auto;
+    height: 23px;
+    margin-top: -20px;
+  }
+}
+
+@media screen and (min-width:544px) {
+  /*　画面サイズが480pxからはここを読み込む　*/
+  .button img{
+    width: auto;
+    height: 50px;
+    margin-top: 0;
+  }
+}
+
+
+
+
+
+
+
+
 
 .thanks-text-bold{
   font-weight: bold;
@@ -235,30 +502,142 @@
   margin: 0 auto;
   width: 100%;
   padding: 20px;
-  max-width: 560px;
+  font-size: 16px;
+  max-width: 295px;
 }
+
+@media screen and (min-width:545px) {
+  /*　画面サイズが480pxから下はここを読み込む　*/
+  .button-text-area{
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px;
+    font-size: 16px;
+    max-width: 295px;
+  }
+}
+
+@media screen and (min-width:544px) {
+  /*　画面サイズが480pxから上はここを読み込む　*/
+  .button-text-area{
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px;
+    font-size: 19px;
+    max-width: 560px;
+  }
+}
+
+
+
+
+
+
+
+
+
 
 .button-text-green{
   background-color: #3FA483;
   border-radius: 5px;
   color: #ffffff;
-  font-size: 19px;
-  font-family: Hiragino Maru Gothic Std;
+  font-size: 16px;
+  font-family: Noto sans jp;
   text-align: center;
   max-width: 520px;
   padding: 10px;
 }
 
+@media screen and (min-width:545px) {
+  /*　画面サイズが480pxから下はここを読み込む　*/
+  .button-text-green{
+    background-color: #3FA483;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: Noto sans jp;
+    text-align: center;
+    max-width: 520px;
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width:544px) {
+  /*　画面サイズが480pxから上はここを読み込む　*/
+  .button-text-green{
+    background-color: #3FA483;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 19px;
+    font-family: Noto sans jp;
+    text-align: center;
+    opacity: 1;
+    max-width: 520px;
+    padding: 10px;
+  }
+}
+
+.button-text-green-wrap :hover{
+  background-color: #169067;
+  border-radius: 5px;
+}
+
+.button-text-orange-wrap :hover{
+  background-color: #EF8B00;
+  border-radius: 5px;
+}
+
+
+
+
+
 .button-text-orange{
   background-color: #F09C2A;
   border-radius: 5px;
   color: #ffffff;
-  font-size: 19px;
-  font-family: Hiragino Maru Gothic Std;
+  font-size: 16px;
+  font-family: Noto sans jp;
   text-align: center;
   max-width: 520px;
   padding: 10px;
 }
+
+@media screen and (min-width:545px) {
+  /*　画面サイズが480pxから下はここを読み込む　*/
+  .button-text-orange{
+    background-color: #F09C2A;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: Noto sans jp;
+    text-align: center;
+    max-width: 520px;
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width:544px) {
+  /*　画面サイズが480pxから上はここを読み込む　*/
+  .button-text-orange{
+    background-color: #F09C2A;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 19px;
+    font-family: Noto sans jp;
+    text-align: center;
+    max-width: 520px;
+    padding: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
 
 .width100{
   width: 100%;
@@ -269,5 +648,100 @@
 }
 
 .margin-bottom60{
-  margin-bottom: 60px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width:545px) {
+  /*　画面サイズが480pxから下はここを読み込む　*/
+  .margin-bottom60{
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width:544px) {
+  /*　画面サイズが480pxから上はここを読み込む　*/
+  .margin-bottom60{
+    margin-bottom: 60px;
+  }
+}
+
+
+
+
+
+
+
+
+.flex {
+	-webkit-display: flex;
+	-moz-display: flex;
+	-ms-display: flex;
+	-o-display: flex;
+	-js-display: flex;
+	display: flex
+}
+.flex--row {
+	flex-direction: row
+}
+.flex--column {
+	flex-direction: column
+}
+.flex--center {
+	align-items: center;
+	justify-content: center
+}
+.flex--row-right {
+	flex-direction: row;
+	justify-content: flex-end
+}
+.flex--row-center {
+	align-items: center;
+	flex-direction: row
+}
+.flex--row-left {
+	align-items: center;
+	flex-direction: row;
+	justify-content: flex-start
+}
+.flex--row-top {
+	align-items: flex-start;
+	flex-direction: row
+}
+.flex--row-bottom {
+	align-items: flex-end;
+	flex-direction: row
+}
+.flex--column-center {
+	align-items: center;
+	flex-direction: column;
+	justify-content: center
+}
+.flex--column-left {
+	align-items: flex-start;
+	flex-direction: column;
+	justify-content: center
+}
+.flex--column-right {
+	align-items: flex-end;
+	flex-direction: column;
+	justify-content: center
+}
+.flex--space-between {
+	justify-content: space-between
+}
+.flex--space-around {
+	justify-content: space-around
+}
+.flex--vertical-center {
+	align-items: center
+}
+.flex--side-left {
+	flex-flow: wrap;
+	justify-content: flex-end
+}
+.flex--side-center {
+	justify-content: center
+}
+.flex--no-wrap-phone {
+	flex-wrap: nowrap
 }
