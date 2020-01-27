@@ -710,13 +710,13 @@
 .iframe-content{
   position: relative;
   width: 100%;
-  height: 200px;
+  height: 150px;
 }
 
 .iframe-content iframe{
   position: absolute;
   width: 100%;
-  height: 200px;
+  height: 150px;
 }
 
 
