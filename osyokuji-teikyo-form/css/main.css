@@ -684,8 +684,47 @@
 
 
 
+.iframe-content{
+  font-size: 9px;
+}
 
 
+.terms{
+  font-size: 11px;
+  padding: 5%;
+  line-height: 1.1;
+  width: 100%;
+  min-width: 200px;
+}
+
+
+
+
+.terms-title{
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: -1px;
+}
+
+
+.iframe-content{
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+.iframe-content iframe{
+  position: absolute;
+  width: 100%;
+  height: 200px;
+}
+
+
+.terms-top{
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
 
 
 
