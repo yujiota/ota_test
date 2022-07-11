@@ -1,0 +1,57 @@
+/*
+Error: File to import not found or unreadable: bourbon.
+       Load paths:
+         /Users/ohtayuji/dev/manda-kaipoke-cms/source/stylesheets
+         /Users/ohtayuji/dev/manda-kaipoke-cms/source/stylesheets/modules
+         /Users/ohtayuji/dev/manda-kaipoke-cms/source/stylesheets/mixins
+         /Users/ohtayuji/dev/manda-kaipoke-cms/source/stylesheets/variables
+         /Users/ohtayuji/dev/manda-kaipoke-cms/vendor/bourbon
+        on line 1 of source/stylesheets/application.css.sass
+
+1: @import 'bourbon'
+2: @import 'sanitize'
+3: @import 'mixins'
+4: @import 'variables'
+5: @import 'modules'
+6: @import 'pages/all'
+
+Backtrace:
+source/stylesheets/application.css.sass:1
+/Users/ohtayuji/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Users/ohtayuji/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:44:in `import'
+/Users/ohtayuji/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/ohtayuji/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/ohtayuji/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:310:in `visit_import'
+/Users/ohtayuji/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/ohtayuji/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/ohtayuji/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/Users/ohtayuji/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/Users/ohtayuji/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/Users/ohtayuji/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/ohtayuji/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/ohtayuji/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/ohtayuji/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/ohtayuji/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/ohtayuji/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/ohtayuji/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/ohtayuji/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/ohtayuji/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/ohtayuji/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/ohtayuji/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/ohtayuji/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Users/ohtayuji/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/ohtayuji/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/ohtayuji/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Users/ohtayuji/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Users/ohtayuji/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:387:in `run'
+/Users/ohtayuji/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Users/ohtayuji/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
+/Users/ohtayuji/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
+/Users/ohtayuji/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
+/Users/ohtayuji/.rbenv/versions/2.7.4/bin/sass:23:in `load'
+/Users/ohtayuji/.rbenv/versions/2.7.4/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: bourbon.\A        Load paths:\A          /Users/ohtayuji/dev/manda-kaipoke-cms/source/stylesheets\A          /Users/ohtayuji/dev/manda-kaipoke-cms/source/stylesheets/modules\A          /Users/ohtayuji/dev/manda-kaipoke-cms/source/stylesheets/mixins\A          /Users/ohtayuji/dev/manda-kaipoke-cms/source/stylesheets/variables\A          /Users/ohtayuji/dev/manda-kaipoke-cms/vendor/bourbon\A         on line 1 of source/stylesheets/application.css.sass\A \A 1: @import 'bourbon'\A 2: @import 'sanitize'\A 3: @import 'mixins'\A 4: @import 'variables'\A 5: @import 'modules'\A 6: @import 'pages/all'"; }
